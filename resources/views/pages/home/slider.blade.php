@@ -16,9 +16,9 @@
         <div class="swiper-wrapper">
 
 
+            @foreach (slider() as $slide)
             <div class="swiper-slide">
-                <div class="image-layer"
-                    style="background-image: url({{ asset('assets/images/backgrounds/main-slider-1-1.jpg')}});">
+                <div class="image-layer" style="background-image: url({{ asset($slide['image'])}});">
                 </div>
                 <!-- <div class="image-layer-overlay"></div> -->
                 <div class="main-slider-shape-1"></div>
@@ -28,40 +28,18 @@
                 <div class="main-slider-shape-5"></div>
                 <!-- /.image-layer -->
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="main-slider__content">
-                                {{-- <p>welcome to aivons consultancy</p> --}}
-                                <h2>consulting <br> for every <br> business</h2>
-                                <a href="about.html" class="thm-btn">Discover More</a>
+                    <div class="row  ">
+                        <div class="col-lg-9 ">
+                            <div class="main-slider__content  d-flex flex-column align-self-center">
+                                <h2>{{ $slide['title'] }}</h2>
+                                <p>{{ $slide['description'] }}</p>
+                                <a href="{{ $slide['url'] }}" class="thm-btn">Discover More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="image-layer"
-                    style="background-image: url({{ asset('assets/images/backgrounds/main-slider-1-2.jpg')}});">
-                </div>
-                <!-- <div class="image-layer-overlay"></div> -->
-                <div class="main-slider-shape-1"></div>
-                <div class="main-slider-shape-2"></div>
-                <div class="main-slider-shape-3"></div>
-                <div class="main-slider-shape-4"></div>
-                <div class="main-slider-shape-5"></div>
-                <!-- /.image-layer -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="main-slider__content">
-                                {{-- <p>welcome to aivons consultancy</p> --}}
-                                <h2>consulting <br> for every <br> business</h2>
-                                <a href="#" class="thm-btn">Discover More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
 
 
         </div>

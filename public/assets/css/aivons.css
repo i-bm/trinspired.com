@@ -19,7 +19,8 @@
 # Common
 --------------------------------------------------------------*/
 :root {
-    --thm-font: 'Jost', sans-serif;
+    /* --thm-font: 'Jost', sans-serif; */
+    --thm-font: 'Rubik', sans-serif;
     --thm-reey-font: 'reeyregular';
     --thm-gray: #726f84;
     --thm-gray-rgb: 114, 111, 132;
@@ -46,9 +47,9 @@
 body {
     font-family: var(--thm-font);
     color: var(--thm-gray);
-    font-size: 18px;
-    line-height: 34px;
-    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
 }
 
 body.locked {
@@ -99,6 +100,7 @@ h5,
 h6 {
     color: var(--thm-black);
     margin: 0;
+    font-weight: 700;
 }
 
 dl,

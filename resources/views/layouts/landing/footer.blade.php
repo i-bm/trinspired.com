@@ -98,7 +98,7 @@
                 <div class="col-xl-12">
                     <div class="site-footer-bottom__inner">
                         <div class="site-footer-bottom__left">
-                            <p>© Copyright {{ date('Y') }} by <a href="#">{{ config('app.name') }}. All Rights
+                            <p>© Copyright {{ date('Y') }} <a href="#">{{ config('app.name') }}. All Rights
                                     Reserved.</a></p>
                         </div>
                         <div class="site-footer__social">
