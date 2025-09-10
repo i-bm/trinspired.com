@@ -57,6 +57,23 @@
     <link rel="stylesheet" href="{{ asset('assets/css/aivons-toolbar.css')}}">
 
     <style>
+        .page-header__bg {
+            background-color: transparent !important;
+            background-blend-mode: luminosity;
+            opacity: 1 !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-transform: none !important;
+            font-weight: 400 !important;
+            font-family: 'Jost', sans-serif !important;
+        }
+
         .main-menu .main-menu__list>li>a,
         .stricky-header .main-menu__list>li>a,
         .main-menu .main-menu__list li ul li a,
@@ -106,6 +123,36 @@
             border-radius: 50px !important;
             padding: 10px 20px !important;
             align-self: flex-start
+        }
+
+        .thm-breadcrumb li,
+        .thm-breadcrumb li a {
+            text-transform: none !important;
+        }
+
+        .page-header__inner h2 {
+            font-size: 50px !important;
+            font-weight: 400 !important;
+            text-transform: none !important;
+            font-family: 'Jost', sans-serif !important;
+        }
+
+        .cta-one__btn {
+            text-transform: none !important;
+            font-weight: 400 !important;
+            border-radius: 50px !important;
+            /* padding: 10px 20px !important; */
+        }
+
+
+
+        .testimonials-one__client-img>img {
+            -webkit-filter: none !important;
+            filter: none !important;
+        }
+
+        .news-one__img {
+            background-color: transparent !important;
         }
     </style>
 </head>

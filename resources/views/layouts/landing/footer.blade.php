@@ -5,7 +5,7 @@
     <div class="container">
         <div class="site-footer__top">
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="footer-widget__column footer-widget__about">
                         <div class="footer-widget__about-logo">
                             <a href="{{ route('home') }}"><img src="assets/images/logo-light.png" width="200"
@@ -52,17 +52,17 @@
                             <li><a href="team.html">Meet our team</a></li>
                             <li><a href="cases.html">Case stories</a></li>
                             <li><a href="blog.html">Latest news</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
-                        <ul class="footer-widget__explore-list footer-widget__explore-list-two list-unstyled">
+                        {{-- <ul class="footer-widget__explore-list footer-widget__explore-list-two list-unstyled">
                             <li><a href="contact.html">Support</a></li>
                             <li><a href="faq.html">Terms of use</a></li>
                             <li><a href="about.html">Privacy policy</a></li>
                             <li><a href="faq.html">Help</a></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-8 wow fadeInUp" data-wow-delay="400ms">
+                <div class="col-xl-4 col-lg-6 col-md-8 wow fadeInUp" data-wow-delay="400ms">
                     <h3 class="footer-widget__title">Get In Touch</h3>
                     <ul class="list-unstyled footer-widget__contact-list">
                         <li>
@@ -70,7 +70,17 @@
                                 <i class="fas fa-phone-square-alt"></i>
                             </div>
                             <div class="text">
-                                <p><a href="tel:+233262644774">+233 26 264 4774</a></p>
+                                <p><a href="tel:{{ config('misc.africa_phone') }}">{{ config('misc.africa_phone') }}</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fas fa-phone-square-alt"></i>
+                            </div>
+                            <div class="text">
+                                <p><a href="tel:{{ config('misc.global_phone') }}">{{ config('misc.global_phone') }}</a>
+                                </p>
                             </div>
                         </li>
                         <li>
@@ -78,7 +88,7 @@
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="text">
-                                <p><a href="mailto:info@trinspired.com">info@trinspired.com</a></p>
+                                <p><a href="mailto:{{ config('misc.email') }}">{{ config('misc.email') }}</a></p>
                             </div>
                         </li>
                         <li>
@@ -86,7 +96,7 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="text">
-                                <p>27 Old Gloucester Street, London WC1N 3AX, United Kingdom</p>
+                                <p>{{ config('misc.global_address') }}</p>
                             </div>
                         </li>
                     </ul>
@@ -101,11 +111,9 @@
                             <p>© Copyright {{ date('Y') }} <a href="#">{{ config('app.name') }}. All Rights
                                     Reserved.</a></p>
                         </div>
-                        <div class="site-footer__social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="clr-dri"><i class="fab fa-dribbble"></i></a>
-                            <a href="#" class="clr-ins"><i class="fab fa-instagram"></i></a>
+                        <div class="d-flex align-items-center gap-3">
+                            <p><a href="#">Privacy Policy</a></p>
+                            <p><a href="#">Terms of Service</a></p>
                         </div>
                     </div>
                 </div>

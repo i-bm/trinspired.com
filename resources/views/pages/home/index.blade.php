@@ -6,4 +6,7 @@
 
 @include('pages.home.about')
 @include('pages.home.services')
+@include('pages.home.testimonials')
+@include('pages.home.news')
+@include('pages.partials.cta')
 @endsection

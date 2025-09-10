@@ -1,6 +1,6 @@
 @extends('layouts.landing.main')
 @section('content')
-@include('pages.partials.breadcrumb')
+@include('pages.partials.breadcrumb', ['image' => asset('assets/images/backgrounds/page-header-bg-1.jpg')])
 
 
 @include('pages.contact.location')
