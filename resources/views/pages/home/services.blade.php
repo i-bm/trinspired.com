@@ -139,6 +139,29 @@
                     </div>
 
 
+                    <div class="col-lg-12" style="margin-top: 100px;">
+                        <div class="row  d-flex align-items-center">
+
+                            <div class="col-lg-6 d-flex flex-column">
+                                <h4>Telecommunications Services</h4>
+                                <p>We provide integrated network delivery and installation with ongoing technical
+                                    support, manages international equipment procurement and testing, and offers
+                                    value-added export services. It also has expertise in mergers and acquisitions for
+                                    B2B and S2C operators in Africa, including technical, financial, commercial, and
+                                    marketing analysis for business development. Additionally, it evaluates telecom
+                                    investment opportunities, from startups to diversification in products, services,
+                                    and market share.</p>
+
+                                <a href="#" class="thm-btn">read more</a>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <img src="{{ asset('assets/images/services/telecom.jpg') }}"
+                                    alt="telecommunications services" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 

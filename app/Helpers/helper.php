@@ -74,7 +74,7 @@ function slider()
         [
             'title' => 'High performance cloud computing orchestration for higher efficiencies and peace of mind',
             'description' => 'Private, Hybrid, Multi-Cloud & More',
-            'image' => 'assets/images/backgrounds/1.avif',
+            'image' => 'assets/images/backgrounds/cloud.jpg',
             'url' => '#',
         ],
         [
@@ -93,6 +93,12 @@ function slider()
             'title' => 'ACRONIS Advanced Endpoint Security + EDR with MS 365 Email Security',
             'description' => 'NextGen AI Antivirus +EDR - Backup Share & Recovery',
             'image' => 'assets/images/backgrounds/4.avif',
+            'url' => '#',
+        ],
+        [
+            'title' => 'Telecommunications Services',
+            'description' => 'NextGen AI Antivirus +EDR - Backup Share & Recovery',
+            'image' => 'assets/images/backgrounds/telecom.jpg',
             'url' => '#',
         ],
     ];
