@@ -10,6 +10,7 @@ class ContactController extends Controller
     public function index()
     {
         $title = 'Contact Us';
-        return view('pages.contact.index', compact('title'));
+        $page = 'Contact Us';
+        return view('pages.contact.index', compact('title', 'page'));
     }
 }

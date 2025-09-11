@@ -3,7 +3,8 @@
         <div class="main-menu-wrapper">
             <div class="main-menu-wrapper__left">
                 <div class="main-menu-wrapper__logo">
-                    <a href="{{ route('home') }}"><img src="assets/images/logo-light.png" width="200" alt=""></a>
+                    <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo-light.png') }}" width="200"
+                            alt="Trinspired Consult Logo"></a>
                 </div>
                 <div class="main-menu-wrapper__main-menu">
                     <a href="#" class="mobile-nav__toggler">
@@ -12,14 +13,15 @@
                         <span class="mobile-nav__toggler-bar"></span>
                     </a>
                     <ul class="main-menu__list">
-                        <li class="">
+                        <li>
                             <a href="{{ route('home') }}">Home</a>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown {{ request()->is('services*') ? 'current' : '' }}">
                             <a href="#">Services</a>
                             <ul>
                                 @foreach (nav_services() as $service)
-                                <li><a href="{{ $service['url'] }}">{{ $service['name'] }}</a></li>
+                                <li class="{{ request()->is($service['url']) ? 'current' : '' }}"><a
+                                        href="{{ $service['url'] }}">{{ $service['name'] }}</a></li>
                                 @endforeach
                             </ul>
                         </li>

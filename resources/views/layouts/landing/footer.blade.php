@@ -1,15 +1,15 @@
 <!--Site Footer One Start-->
 <footer class="site-footer">
     <div class="site-footer-shape wow slideInRight" data-wow-delay="100ms" data-wow-duration="3500ms"
-        style="background-image: url(assets/images/shapes/footer-shape.png)"></div>
+        style="background-image: url({{ asset('assets/images/shapes/footer-shape.png') }})"></div>
     <div class="container">
         <div class="site-footer__top">
             <div class="row">
                 <div class="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="footer-widget__column footer-widget__about">
                         <div class="footer-widget__about-logo">
-                            <a href="{{ route('home') }}"><img src="assets/images/logo-light.png" width="200"
-                                    alt=""></a>
+                            <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo-light.png') }}"
+                                    width="200" alt=""></a>
                         </div>
                         <p class="footer-widget__text">Trinspired Consult is a provider of world class Telecommunication
                             and Information

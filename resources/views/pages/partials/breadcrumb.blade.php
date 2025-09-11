@@ -1,7 +1,8 @@
 <!--Page Header Start-->
 <section class="page-header" style="height: 50vh;">
     <div class="page-header__bg"
-        style="background-image: url({{  $image ?? asset('assets/images/backgrounds/page-header-bg.jpg') }});"></div>
+        style="background-image: url({{  $image ?? asset('assets/images/backgrounds/page-header-bg.jpg') }});">
+    </div>
     <!-- /.page-header__bg -->
     <div class="page-header-shape-1"></div><!-- /.page-header-shape-1 -->
     <div class="page-header-shape-2"></div><!-- /.page-header-shape-2 -->
