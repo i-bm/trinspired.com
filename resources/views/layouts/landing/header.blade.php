@@ -171,7 +171,29 @@
             color: #364676;
             text-decoration: underline;
         }
+
+        .testimonials-one__carousel.owl-carousel .owl-stage {
+            display: flex !important;
+            align-items: stretch !important;
+        }
+
+        .testimonials-one__carousel.owl-carousel .owl-item {
+            display: flex !important;
+            align-items: stretch !important;
+        }
+
+        .testimonials-one__single {
+            display: flex !important;
+            flex-direction: column !important;
+            height: 100% !important;
+        }
+
+        .testimonials-one__text {
+            flex-grow: 1 !important;
+        }
     </style>
+
+
 </head>
 <div class="preloader">
     <div class="preloader__image"></div><!-- /.preloader__image -->

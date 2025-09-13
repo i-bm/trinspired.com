@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Pages;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
@@ -11,6 +10,7 @@ class ContactController extends Controller
     {
         $title = 'Contact Us';
         $page = 'Contact Us';
+
         return view('pages.contact.index', compact('title', 'page'));
     }
 }

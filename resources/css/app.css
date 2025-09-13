@@ -9,3 +9,24 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* Custom styles for equal height testimonials using flexbox */
+.testimonials-one__carousel.owl-carousel .owl-stage {
+    display: flex !important;
+    align-items: stretch !important;
+}
+
+.testimonials-one__carousel.owl-carousel .owl-item {
+    display: flex !important;
+    align-items: stretch !important;
+}
+
+.testimonials-one__single {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+.testimonials-one__text {
+    flex-grow: 1 !important;
+}

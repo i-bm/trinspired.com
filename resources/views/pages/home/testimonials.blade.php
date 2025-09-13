@@ -13,90 +13,20 @@
             <div class="col-xl-8">
                 <div class="testimonials-one__right">
                     <div class="testimonials-one__carousel owl-theme owl-carousel">
-                        <!--Testimonials One Single-->
+                        @foreach (testimonials() as $testimonial)
                         <div class="testimonials-one__single">
-                            <p class="testimonials-one__text">Lorem ipsum is simply free text dolor sit amet,
-                                consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
+                            <p class="testimonials-one__text">{{ $testimonial['description'] }}</p>
                             <div class="testimonials-one__client-info">
-                                <h5 class="testimonials-one__client-name">Todd Higgins</h5>
-                                <p class="testimonials-one__client-title">Customer</p>
+                                <h5 class="testimonials-one__client-name">{{ $testimonial['name'] }}</h5>
+                                <p class="testimonials-one__client-title">{{ $testimonial['Company'] }}</p>
                             </div>
                             <div class="testimonials-one__client-img">
-                                <img src="{{  asset('assets/images/testimonial/testimonials-1-1.png') }}" alt="">
+                                <img src="{{  asset($testimonial['image']) }}" alt="">
                             </div>
                             <div class="testimonials-one__quote"></div>
                         </div>
-                        <!--Testimonials One Single-->
-                        <div class="testimonials-one__single">
-                            <p class="testimonials-one__text">Lorem ipsum is simply free text dolor sit amet,
-                                consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
-                            <div class="testimonials-one__client-info">
-                                <h5 class="testimonials-one__client-name">Gordon King</h5>
-                                <p class="testimonials-one__client-title">Customer</p>
-                            </div>
-                            <div class="testimonials-one__client-img">
-                                <img src="{{  asset('assets/images/testimonial/testimonials-1-2.png') }}" alt="">
-                            </div>
-                            <div class="testimonials-one__quote"></div>
-                        </div>
-                        <!--Testimonials One Single-->
-                        <div class="testimonials-one__single">
-                            <p class="testimonials-one__text">Lorem ipsum is simply free text dolor sit amet,
-                                consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
-                            <div class="testimonials-one__client-info">
-                                <h5 class="testimonials-one__client-name">Paul Alvarez</h5>
-                                <p class="testimonials-one__client-title">Customer</p>
-                            </div>
-                            <div class="testimonials-one__client-img">
-                                <img src="assets/images/testimonial/testimonials-1-1.png" alt="">
-                            </div>
-                            <div class="testimonials-one__quote"></div>
-                        </div>
-                        <!--Testimonials One Single-->
-                        <div class="testimonials-one__single">
-                            <p class="testimonials-one__text">Lorem ipsum is simply free text dolor sit amet,
-                                consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
-                            <div class="testimonials-one__client-info">
-                                <h5 class="testimonials-one__client-name">Hester Ortiz</h5>
-                                <p class="testimonials-one__client-title">Customer</p>
-                            </div>
-                            <div class="testimonials-one__client-img">
-                                <img src="{{  asset('assets/images/testimonial/testimonials-1-2.png') }}" alt="">
-                            </div>
-                            <div class="testimonials-one__quote"></div>
-                        </div>
-                        <!--Testimonials One Single-->
-                        <div class="testimonials-one__single">
-                            <p class="testimonials-one__text">Lorem ipsum is simply free text dolor sit amet,
-                                consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
-                            <div class="testimonials-one__client-info">
-                                <h5 class="testimonials-one__client-name">Randall Fleming</h5>
-                                <p class="testimonials-one__client-title">Customer</p>
-                            </div>
-                            <div class="testimonials-one__client-img">
-                                <img src="{{  asset('assets/images/testimonial/testimonials-1-1.png') }}" alt="">
-                            </div>
-                            <div class="testimonials-one__quote"></div>
-                        </div>
-                        <!--Testimonials One Single-->
-                        <div class="testimonials-one__single">
-                            <p class="testimonials-one__text">Lorem ipsum is simply free text dolor sit amet,
-                                consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
-                            <div class="testimonials-one__client-info">
-                                <h5 class="testimonials-one__client-name">Benjamin Hansen</h5>
-                                <p class="testimonials-one__client-title">Customer</p>
-                            </div>
-                            <div class="testimonials-one__client-img">
-                                <img src="{{  asset('assets/images/testimonial/testimonials-1-2.png') }}" alt="">
-                            </div>
-                            <div class="testimonials-one__quote"></div>
-                        </div>
+                        @endforeach
+
                     </div>
                 </div>
             </div>
