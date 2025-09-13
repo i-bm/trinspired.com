@@ -22,42 +22,12 @@
         text-transform: none;
         font-weight: 300;
     }
-
-    /* .service-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 40%, rgba(0, 0, 0, 0.65) 100%);
-    }
-
-    .service-image {
-        object-fit: cover;
-        height: 100%;
-        min-height: 200px;
-    }
-
-    .service__single {
-        transition: transform 0.3s cubic-bezier(.4, 2, .6, 1), box-shadow 0.3s;
-    }
-
-    .service__single a:hover {
-        transform: translateY(-10px) scale(1.03);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 1.5px 6px rgba(0, 0, 0, 0.10);
-    } */
 </style>
 
 
 <section class="services">
     <div class="container">
         <div class="row">
-            {{-- <div class="col-xl-12">
-                <div class="section-title text-center">
-                    <h2 class="section-title__title">Our Services</h2>
-                    <p class="section-title__text">We offer a wide range of services to meet your needs.</p>
-                </div>
-            </div> --}}
             <div class="">
                 <div class="row g-4">
                     <div class="col-lg-12">
@@ -70,7 +40,7 @@
                                     continuity, multi-time zone support and connectivity to over 55 datacenters around
                                     the world and on every continent.</p>
 
-                                <a href="#" class="thm-btn">read more</a>
+                                <a href="{{ route('services.cloud') }}" class="thm-btn">read more</a>
                             </div>
                             <div class="col-lg-6">
                                 <img src="{{ asset('assets/images/services/cloud.jpg') }}" alt="Cloud Computing"
@@ -92,7 +62,7 @@
                                     for other purposes. The highly redundant network with over 55 datacenters across the
                                     globe and growing, ensures higher data and systems availability.</p>
 
-                                <a href="#" class="thm-btn">read more</a>
+                                <a href="{{ route('services.secure') }}" class="thm-btn">read more</a>
                             </div>
 
                         </div>
