@@ -72,19 +72,28 @@ function slider()
 {
     return [
         [
-            'title' => 'High performance cloud computing orchestration for higher efficiencies and peace of mind',
-            'description' => 'Private, Hybrid, Multi-Cloud & More',
+            'title' => 'Cloud Computing',
+            'description' => 'High performance cloud computing orchestration for higher efficiencies...',
             'image' => 'assets/images/backgrounds/cloud.jpg',
             'url' => route('services.cloud'),
         ],
         [
-            'title' => 'Continuity Assurance & Failover in seconds for any application on any device',
-            'description' => 'Winning strategy across verticals',
+            'title' => 'Disaster Recovery-Business Continuity',
+            'description' => 'Continuity Assurance & Failover in seconds for any application on any device',
+            // 'description' => 'Winning strategy across verticals',
             'image' => 'assets/images/backgrounds/disaster_1.png',
             'url' => route('services.disaster'),
         ],
         [
-            'title' => 'Secure Access to Any Application on Any Device Anywhere',
+            // 'title' => 'Secure Access to Any Application on Any Device Anywhere',
+            'title' => 'Secure Access & Connection Acceleration',
+            // 'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections',
+            'description' => 'Securely access any application on any device anywhere',
+            'image' => 'assets/images/backgrounds/secure.png',
+            'url' => route('services.secure'),
+        ],
+        [
+            'title' => 'Secure Access & Connection Acceleration',
             'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections',
             'image' => 'assets/images/backgrounds/secure.png',
             'url' => route('services.secure'),
