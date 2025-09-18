@@ -87,8 +87,8 @@ function slider()
         [
             // 'title' => 'Secure Access to Any Application on Any Device Anywhere',
             'title' => 'Secure Access & Connection Acceleration',
-            // 'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections',
-            'description' => 'Securely access any application on any device anywhere',
+            'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections',
+            // 'description' => 'Securely access any application on any device anywhere',
             'image' => 'assets/images/backgrounds/secure.png',
             'url' => route('services.secure'),
         ],
@@ -100,9 +100,9 @@ function slider()
         ],
         [
             'title' => 'ACRONIS Advanced Endpoint Security + EDR with MS 365 Email Security',
-            'description' => 'NextGen AI Antivirus +EDR - Backup Share & Recovery',
-            'image' => 'assets/images/backgrounds/4.avif',
-            'url' => route('services.secure'),
+            'description' => 'NextGen AI Cybersecurity with multi domain referencing for holistic defense',
+            'image' => 'assets/images/backgrounds/acronis.jpg',
+            'url' => route('services.acronis'),
         ],
         [
             'title' => 'Telecommunications Services',

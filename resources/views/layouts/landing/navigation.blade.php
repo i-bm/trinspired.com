@@ -25,8 +25,8 @@
                                 @endforeach
                             </ul>
                         </li>
-                        <li><a href="#">Company</a></li>
-                        <li class="dropdown">
+                        <li><a href="{{ route('company') }}">Company</a></li>
+                        {{-- <li class="dropdown">
                             <a href="#">Pages</a>
                             <ul>
                                 <li><a href="about.html">About</a></li>
@@ -35,7 +35,7 @@
                                 <li><a href="faq.html">FAQS</a></li>
                                 <li><a href="404.html">404</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                         <li><a href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>
