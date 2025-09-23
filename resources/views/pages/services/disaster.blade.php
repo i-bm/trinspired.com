@@ -11,9 +11,9 @@
                 <div class="services-details__left">
 
 
-                    <div class="services-details__img">
+                    {{-- <div class="services-details__img">
                         <img src="{{ asset('assets/images/resources/disaster_design.png') }}" alt="" class="img-fluid">
-                    </div>
+                    </div> --}}
                     <div class="services-details__top-content">
                         <h2 class="services-details__top-title">Disaster Recovery-Business Continuity</h2>
 

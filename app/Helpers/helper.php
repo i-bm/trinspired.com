@@ -89,7 +89,7 @@ function slider()
             'title' => 'Secure Access & Connection Acceleration',
             'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections',
             // 'description' => 'Securely access any application on any device anywhere',
-            'image' => 'assets/images/backgrounds/secure.png',
+            'image' => 'assets/images/backgrounds/secure_access.jpg',
             'url' => route('services.secure'),
         ],
         // [
