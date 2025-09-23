@@ -113,52 +113,6 @@
                             outcome, return on investments and peace of mind</p>
 
                     </div>
-                    {{-- <div class="services-details__planning">
-                        <div class="services-details__planning-img">
-                            <img src="{{ asset('assets/images/services/services-details__planning-img.jpg') }}" alt="">
-                        </div>
-                        <div class="services-details__planning-content">
-                            <h2 class="services-details__planning-title">Use Cases</h2>
-                            <p class="services-details__planning-text">Our expert team of international engineers have
-                                designed and implemented turn-key solutions for international customers across
-                                verticals. Some of the solutions include the following:</p>
-
-                            <ul class="list-unstyled services-details__planning-list">
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-tick"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Research beyond the business plan</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-tick"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Marketing options and rates</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-tick"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>The ability to turnaround consulting</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <span class="icon-tick"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Customer engagement matters</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> --}}
 
                     <h4 class="services-details__top-title">Use Cases</h4>
                     <p class="services-details__top-text">Our expert team of international engineers have

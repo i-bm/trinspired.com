@@ -81,7 +81,7 @@ function slider()
             'title' => 'Disaster Recovery-Business Continuity',
             'description' => 'Continuity Assurance & Failover in seconds for any application on any device',
             // 'description' => 'Winning strategy across verticals',
-            'image' => 'assets/images/backgrounds/disaster_1.png',
+            'image' => 'assets/images/backgrounds/disaster_recover.png',
             'url' => route('services.disaster'),
         ],
         [
@@ -92,14 +92,14 @@ function slider()
             'image' => 'assets/images/backgrounds/secure.png',
             'url' => route('services.secure'),
         ],
+        // [
+        //     'title' => 'Secure Access & Connection Acceleration',
+        //     'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections',
+        //     'image' => 'assets/images/backgrounds/secure.png',
+        //     'url' => route('services.secure'),
+        // ],
         [
-            'title' => 'Secure Access & Connection Acceleration',
-            'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections',
-            'image' => 'assets/images/backgrounds/secure.png',
-            'url' => route('services.secure'),
-        ],
-        [
-            'title' => 'ACRONIS Advanced Endpoint Security + EDR with MS 365 Email Security',
+            'title' => 'Acronis Advanced Endpoint Security',
             'description' => 'NextGen AI Cybersecurity with multi domain referencing for holistic defense',
             'image' => 'assets/images/backgrounds/acronis.jpg',
             'url' => route('services.acronis'),

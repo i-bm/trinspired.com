@@ -117,5 +117,7 @@
 
 @include('pages.company.corevalues')
 
+@include('pages.partials.cta')
+
 
 @endsection

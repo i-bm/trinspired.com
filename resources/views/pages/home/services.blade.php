@@ -62,7 +62,7 @@
                                     for other purposes. The highly redundant network with over 55 datacenters across the
                                     globe and growing, ensures higher data and systems availability.</p>
 
-                                <a href="{{ route('services.secure') }}" class="thm-btn">read more</a>
+                                <a href="{{ route('services.disaster') }}" class="thm-btn">read more</a>
                             </div>
 
                         </div>
@@ -80,7 +80,7 @@
                                     disaster recovery setups securely from the device of their choice without VPN setup.
                                 </p>
 
-                                <a href="#" class="thm-btn">read more</a>
+                                <a href="{{ route('services.secure') }}" class="thm-btn">read more</a>
                             </div>
                             <div class="col-lg-6">
                                 <img src="{{ asset('assets/images/services/secure.jpg') }}" alt="Secure Access"
@@ -102,7 +102,7 @@
                                     that sneak past other defenses with guided interpretations for streamlined analysis,
                                     and unique recovery capabilities for true business continuity.</p>
 
-                                <a href="#" class="thm-btn">read more</a>
+                                <a href="{{ route('services.acronis') }}" class="thm-btn">read more</a>
                             </div>
 
                         </div>
@@ -122,7 +122,7 @@
                                     investment opportunities, from startups to diversification in products, services,
                                     and market share.</p>
 
-                                <a href="#" class="thm-btn">read more</a>
+                                <a href="{{ route('services.telecom') }}" class="thm-btn">read more</a>
                             </div>
 
                             <div class="col-lg-6">
