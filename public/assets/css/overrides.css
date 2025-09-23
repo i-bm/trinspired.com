@@ -1,0 +1,214 @@
+.page-header__bg {
+    background-color: transparent !important;
+    background-blend-mode: luminosity;
+    opacity: 1 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: none !important;
+    font-weight: 400 !important;
+    font-family: 'Jost', sans-serif !important;
+}
+
+.main-menu .main-menu__list>li>a,
+.stricky-header .main-menu__list>li>a,
+.main-menu .main-menu__list li ul li a,
+.stricky-header .main-menu__list li ul li a {
+    text-transform: initial !important;
+    font-weight: 300 !important;
+}
+
+.swiper-wrapper {
+    height: 100vh !important;
+}
+
+
+.main-slider .image-layer {
+    background-color: transparent !important;
+}
+
+.main-slider__next-text,
+.main-slider__prev-text {
+    text-transform: initial !important;
+    font-weight: 400 !important;
+}
+
+.main-slider h2 {
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: initial;
+    font-weight: 400;
+    line-height: 70px;
+    margin-bottom: 20px !important;
+    font-family: 'Jost', sans-serif !important;
+}
+
+.main-slider p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 30px !important;
+}
+
+.main-slider .thm-btn {
+    text-transform: none !important;
+    font-weight: 300 !important;
+    border-radius: 50px !important;
+    padding: 10px 20px !important;
+    align-self: flex-start
+}
+
+.thm-breadcrumb li,
+.thm-breadcrumb li a {
+    text-transform: none !important;
+}
+
+.page-header__inner h2 {
+    font-size: 50px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    font-family: 'Jost', sans-serif !important;
+}
+
+.cta-one__btn {
+    text-transform: none !important;
+    font-weight: 400 !important;
+    border-radius: 50px !important;
+    /* padding: 10px 20px !important; */
+}
+
+
+
+.testimonials-one__client-img>img {
+    -webkit-filter: none !important;
+    filter: none !important;
+}
+
+.news-one__img {
+    background-color: transparent !important;
+}
+
+.prelims {
+    padding: 50px 0 50px;
+    background-color: #f8f9fa;
+    color: #000;
+    transition: all 500ms ease;
+}
+
+h4.prelims__text {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #364676;
+    transform: translateY(10px);
+}
+
+.prelims__text a {
+    color: #364676;
+    text-decoration: underline;
+}
+
+.testimonials-one__carousel.owl-carousel .owl-stage {
+    display: flex !important;
+    align-items: stretch !important;
+}
+
+.testimonials-one__carousel.owl-carousel .owl-item {
+    display: flex !important;
+    align-items: stretch !important;
+}
+
+.testimonials-one__single {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+.testimonials-one__text {
+    flex-grow: 1 !important;
+}
+
+.services-details__top-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: none;
+    line-height: 32px;
+    color: var(--thm-primary-light);
+}
+
+.services-details__top-text {
+    /* font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 32px; */
+    color: var(--thm-black);
+}
+
+.services-details__img>img {
+    mix-blend-mode: normal !important;
+}
+
+.services-details__services-list li a {
+    font-weight: 300 !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    padding-bottom: 10px !important;
+
+}
+
+.services-details__services-list-box {
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+.services-details__bottom-box-title {
+    margin-bottom: 5px !important;
+}
+
+.services-details__bottom-box-text {
+    color: var(--thm-black) !important;
+    line-height: 24px !important;
+}
+
+.services-details__help-box {
+    background-color: transparent !important;
+    box-shadow: -6px 3px 26px 0px rgba(0, 0, 0, .11);
+    padding: 28px;
+}
+
+.services-details__help-box-text {
+    color: var(--thm-black) !important;
+    line-height: 24px !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+}
+
+.services-details__phone,
+.services-details__email {
+    color: var(--thm-black) !important;
+    font-size: 16px !important;
+}
+
+.services-details__help-box-title {
+    color: var(--thm-black) !important;
+}
+
+.services-details__planning-img>img {
+    mix-blend-mode: normal !important;
+}
+
+.services-details__planning-list {
+    padding-top: 0px !important;
+}
+
+.services-details__top-list li {
+   color: var(--thm-black) !important;
+}

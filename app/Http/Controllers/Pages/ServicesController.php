@@ -25,7 +25,7 @@ class ServicesController extends Controller
     public function secure()
     {
         $description = 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections.';
-        $title = 'Secure Success';
+        $title = 'Secure Access';
 
         return view('pages.services.secure', compact('title', 'description'));
     }

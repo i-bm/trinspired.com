@@ -2,72 +2,6 @@
 @section('content')
 @include('pages.partials.breadcrumb', ['image' => asset('assets/images/backgrounds/1.avif')])
 
-<style>
-    .services-details__top-title {
-        font-size: 22px;
-        font-weight: 600;
-        text-transform: none;
-        line-height: 32px;
-        color: var(--thm-primary-light);
-    }
-
-    .services-details__top-text {
-        /* font-size: 16px;
-        font-weight: 400;
-        text-transform: none;
-        line-height: 32px; */
-        color: var(--thm-black);
-    }
-
-    .services-details__img>img {
-        mix-blend-mode: normal !important;
-    }
-
-    .services-details__services-list li a {
-        font-weight: 300 !important;
-        background-color: transparent !important;
-        border-bottom: 1px solid #e0e0e0 !important;
-        padding-bottom: 10px !important;
-
-    }
-
-    .services-details__services-list-box {
-        background-color: transparent !important;
-        padding: 0 !important;
-    }
-
-    .services-details__bottom-box-title {
-        margin-bottom: 5px !important;
-    }
-
-    .services-details__bottom-box-text {
-        color: var(--thm-black) !important;
-        line-height: 24px !important;
-    }
-
-    .services-details__help-box {
-        background-color: transparent !important;
-        box-shadow: -6px 3px 26px 0px rgba(0, 0, 0, .11);
-        padding: 28px;
-    }
-
-    .services-details__help-box-text {
-        color: var(--thm-black) !important;
-        line-height: 24px !important;
-        font-size: 16px !important;
-        font-weight: 300 !important;
-    }
-
-    .services-details__phone,
-    .services-details__email {
-        color: var(--thm-black) !important;
-        font-size: 16px !important;
-    }
-
-    .services-details__help-box-title {
-        color: var(--thm-black) !important;
-    }
-</style>
 
 <!--Services Details Start-->
 <section class="services-details">
@@ -76,60 +10,54 @@
             <div class="col-lg-9">
                 <div class="services-details__left">
 
-                    {{-- <div class="row d-flex align-items-center">
-                        <div class="col-lg-12">
-                            <h4 class="services-details__top-title">High Performance Cloud Computing Orchestration for
-                                Higher Efficiencies and Peace of Mind</h4>
-                        </div>
-                        <div class="col-lg-6">
-                            <p class="services-details__top-text">We provide turn-key cloud computing services that
-                                assures highest performance and availability, compliance with highest global data
-                                protection regulation, business continuity, multi-time zone support and connectivity
-                                to
-                                over 55 datacenters around the world and on every continent. </p>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="{{ asset('assets/images/backgrounds/bg_32.webp') }}" class="img-fluid" alt="">
-                        </div>
-                    </div> --}}
-
-
 
                     <div class="services-details__img">
-                        <img src="{{ asset('assets/images/services/services-details-img-1.jpg') }}" alt="">
+                        <img src="{{ asset('assets/images/resources/disaster_design.png') }}" alt="" class="img-fluid">
                     </div>
                     <div class="services-details__top-content">
-                        <h2 class="services-details__top-title">High Performance Cloud Computing Orchestration</h2>
+                        <h2 class="services-details__top-title">Disaster Recovery-Business Continuity</h2>
 
 
-                        <p class="services-details__top-text"> We provide turn-key cloud computing services that assures
-                            highest performance and availability, compliance with highest global data protection
-                            regulation, business continuity, multi-time zone support and connectivity to over 55
-                            datacenters around the world and on every continent.
+                        <p class="services-details__top-text"> We provide a strategy and an orchestration that makes
+                            certain the availability of systems and data in seconds, in the event of a disaster or just
+                            the need to failover for other purposes. The highly redundant network with over 55
+                            datacenters across the globe and growing, ensures higher data and systems availability
                         </p>
                         <br />
-                        <p class="services-details__top-text">We take keen interest in where you have been, where you
-                            are and where you are going, to design and implement solutions that deliver the desired
-                            outcome, return on investments and peace of mind</p>
+                        <p class="services-details__top-text">Integrated technologies and services ensure compliance
+                            with General Data Protection Regulation (GDPR) and other global standards like SOC-1, SOC-2,
+                            ISO 9001, ISO 27001, ISO 50001, HIPAA, HDS.</p>
+                        <br />
+                        <p class="services-details__top-text">
+                            Protection is end-to-end and anti-encryption algorithms ensures that endpoints cannot be
+                            encrypted by any malware. </p>
+                        <br />
+                        <p class="services-details__top-text"> In failover, users can securely access any application or
+                            data on any device within the local network or WAN or through the internet </p>
 
                     </div>
-                    {{-- <div class="services-details__planning">
+
+
+                    <br />
+
+                    {{-- <img src="{{ asset('assets/images/resources/disaster_design.png') }}" alt="Disaster Recovery"
+                        class="img-fluid"> --}}
+
+
+
+                    <div class="services-details__planning">
                         <div class="services-details__planning-img">
                             <img src="{{ asset('assets/images/services/services-details__planning-img.jpg') }}" alt="">
                         </div>
                         <div class="services-details__planning-content">
-                            <h2 class="services-details__planning-title">Use Cases</h2>
-                            <p class="services-details__planning-text">Our expert team of international engineers have
-                                designed and implemented turn-key solutions for international customers across
-                                verticals. Some of the solutions include the following:</p>
-
+                            <h2 class="services-details__planning-title">Strategy Benefits</h2>
                             <ul class="list-unstyled services-details__planning-list">
                                 <li>
                                     <div class="icon">
                                         <span class="icon-tick"></span>
                                     </div>
                                     <div class="text">
-                                        <p>Research beyond the business plan</p>
+                                        <p>Enhanced cyber protection of environment</p>
                                     </div>
                                 </li>
                                 <li>
@@ -137,7 +65,8 @@
                                         <span class="icon-tick"></span>
                                     </div>
                                     <div class="text">
-                                        <p>Marketing options and rates</p>
+                                        <p>Seamless replication and backup of data and systems while in use to multiple
+                                            locations</p>
                                     </div>
                                 </li>
                                 <li>
@@ -145,7 +74,9 @@
                                         <span class="icon-tick"></span>
                                     </div>
                                     <div class="text">
-                                        <p>The ability to turnaround consulting</p>
+                                        <p>Seamless secure failover on any device in case of disaster without the need
+                                            to invest in servers, connectivity, systems reconfiguration, VPN setups,
+                                            etc.</p>
                                     </div>
                                 </li>
                                 <li>
@@ -153,66 +84,72 @@
                                         <span class="icon-tick"></span>
                                     </div>
                                     <div class="text">
-                                        <p>Customer engagement matters</p>
+                                        <p>Most Cost-effective strategy</p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                    </div> --}}
+                    </div>
 
-                    <h4 class="services-details__top-title">Use Cases</h4>
-                    <p class="services-details__top-text">Our expert team of international engineers have
-                        designed and implemented turn-key solutions for international customers across
-                        verticals. Some of the solutions include the following:</p>
-                    <div class="services-details__bottom-box">
+                    <hr class="border-bottom my-5" />
 
-                        <div class="services-details__bottom-box-single">
-                            <div class="services-details__bottom-box-icon">
-                                <span class="icon-report"></span>
-                            </div>
-                            <div class="services-details__bottom-box-content">
-                                <h4 class="services-details__bottom-box-title">Migration from local to cloud
-                                    infrastructure</h4>
-                                <p class="services-details__bottom-box-text">
-                                    Local or on-premise production systems are migrated to cloud infrastructure at
-                                    record speeds and at increased performance and availability.
-                                    Seamless transition you can trust!
-                                </p>
-                            </div>
+                    <div class="services-details__planning">
+                        <div class="services-details__planning-img">
+                            <img src="{{ asset('assets/images/resources/more-cases-img-2.jpg') }}" alt="">
+                        </div>
+                        <div class="services-details__planning-content">
+                            <h2 class="services-details__planning-title">Strategy difference</h2>
+                            <ul class="list-unstyled services-details__planning-list">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-tick"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Endpoint Security – Backup agents also function as a complete set of next
+                                            generation cybersecurity tools, for total protection of endpoint</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-tick"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Failover – User access to servers or applications through secure browser on
+                                            any device. No VPN setups</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-tick"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Seamless secure failover on any device in case of disaster without the need
+                                            to invest in servers, connectivity, systems reconfiguration, VPN setups,
+                                            etc.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-tick"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Applications – Both web-based and desktop applications (e.g. SAP, Dynamics,
+                                            Infor SunSystems, etc.) are all virtualized, compressed and accelerated for
+                                            faster access through browsers.</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-tick"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Most Cost-effective strategy</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
 
-
-                        <div class="services-details__bottom-box-single">
-                            <div class="services-details__bottom-box-icon">
-                                <span class="icon-report"></span>
-                            </div>
-                            <div class="services-details__bottom-box-content">
-                                <h4 class="services-details__bottom-box-title">Cloud deployment</h4>
-                                <p class="services-details__bottom-box-text">
-
-                                    Servers are provisioned in seconds for application deployments and hosting. Only
-                                    high performance, reliable and secure components are employed in the
-                                    infrastructure
-                                    Cloud deployment made easy and cost-effective
-
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="services-details__bottom-box-single">
-                            <div class="services-details__bottom-box-icon">
-                                <span class="icon-report"></span>
-                            </div>
-                            <div class="services-details__bottom-box-content">
-                                <h4 class="services-details__bottom-box-title">Multi-Cloud deployment</h4>
-                                <p class="services-details__bottom-box-text">
-                                    Multi-cloud architecture for multi-location data protection, multi-layer business
-                                    continuity strategies and more.
-                                    Multi-cloud services for lower recovery time objective
-
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div> <!-- Services Details Left End -->
             </div>

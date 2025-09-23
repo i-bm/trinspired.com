@@ -2,72 +2,7 @@
 @section('content')
 @include('pages.partials.breadcrumb', ['image' => asset('assets/images/backgrounds/1.avif')])
 
-<style>
-    .services-details__top-title {
-        font-size: 22px;
-        font-weight: 600;
-        text-transform: none;
-        line-height: 32px;
-        color: var(--thm-primary-light);
-    }
 
-    .services-details__top-text {
-        /* font-size: 16px;
-        font-weight: 400;
-        text-transform: none;
-        line-height: 32px; */
-        color: var(--thm-black);
-    }
-
-    .services-details__img>img {
-        mix-blend-mode: normal !important;
-    }
-
-    .services-details__services-list li a {
-        font-weight: 300 !important;
-        background-color: transparent !important;
-        border-bottom: 1px solid #e0e0e0 !important;
-        padding-bottom: 10px !important;
-
-    }
-
-    .services-details__services-list-box {
-        background-color: transparent !important;
-        padding: 0 !important;
-    }
-
-    .services-details__bottom-box-title {
-        margin-bottom: 5px !important;
-    }
-
-    .services-details__bottom-box-text {
-        color: var(--thm-black) !important;
-        line-height: 24px !important;
-    }
-
-    .services-details__help-box {
-        background-color: transparent !important;
-        box-shadow: -6px 3px 26px 0px rgba(0, 0, 0, .11);
-        padding: 28px;
-    }
-
-    .services-details__help-box-text {
-        color: var(--thm-black) !important;
-        line-height: 24px !important;
-        font-size: 16px !important;
-        font-weight: 300 !important;
-    }
-
-    .services-details__phone,
-    .services-details__email {
-        color: var(--thm-black) !important;
-        font-size: 16px !important;
-    }
-
-    .services-details__help-box-title {
-        color: var(--thm-black) !important;
-    }
-</style>
 
 <!--Services Details Start-->
 <section class="services-details">
@@ -78,19 +13,35 @@
                     <div class="services-details__img">
                         <img src="{{ asset('assets/images/services/services-details-img-1.jpg') }}" alt="">
                     </div>
-                    <div class="services-details__top-content d-none">
-                        <h2 class="services-details__top-title">High Performance Cloud Computing Orchestration</h2>
+                    <div class="services-details__top-content">
+                        <h2 class="services-details__top-title">Business Consultancy & Trading Services </h2>
 
 
-                        <p class="services-details__top-text"> We provide turn-key cloud computing services that assures
-                            highest performance and availability, compliance with highest global data protection
-                            regulation, business continuity, multi-time zone support and connectivity to over 55
-                            datacenters around the world and on every continent.
+                        <p class="services-details__top-text"> We provide business consultancy as well as general
+                            trading services for our continental and global partners. With a portfolio of experts from
+                            multiple countries with over 35 years of experience in mergers and acquisitions, software
+                            development and deployment, project management, business development and training.
                         </p>
                         <br />
-                        <p class="services-details__top-text">We take keen interest in where you have been, where you
-                            are and where you are going, to design and implement solutions that deliver the desired
-                            outcome, return on investments and peace of mind</p>
+                        <h4 class="services-details__top-text"> Highly experienced domains: </h4>
+                        <ul class="services-details__top-list">
+                            <li>Mergers & Acquisitions in telecoms</li>
+                            <li>Project Management</li>
+                            <li>Software Development & Deployment</li>
+                            <li>Business Consulting</li>
+                        </ul>
+
+                        <br />
+                        <h4 class="services-details__top-text"> Projects executed: </h4>
+                        <ul class="services-details__top-list">
+                            <li>Mergers & Acquisitions service for a European telecom company for the acquisition of 70%
+                                stake in an African Telecom company</li>
+                            <li>Collaboration with a foreign group to implement a national health insurance and
+                                presidential election system for an African country</li>
+                            <li>Hosting and business continuity services deployment for the Financial, Manufacturing,
+                                Educational, Governmental and Insurance institutions in Africa</li>
+                            <li>Import and sale of technologies to multiple industries</li>
+                        </ul>
 
                     </div>
 

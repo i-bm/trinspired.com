@@ -23,10 +23,10 @@ function nav_services()
             'name' => 'Business Consultancy',
             'url' => route('services.consultancy'),
         ],
-        [
-            'name' => 'Trading Solutions',
-            'url' => route('services.trading'),
-        ],
+        // [
+        //     'name' => 'Trading Solutions',
+        //     'url' => route('services.trading'),
+        // ],
     ];
 
 }
