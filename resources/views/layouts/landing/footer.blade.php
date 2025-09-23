@@ -24,9 +24,11 @@
                         <h3 class="footer-widget__title">Explore</h3>
                         <ul class="footer-widget__explore-list list-unstyled">
                             <li><a href="{{ route('company') }}">The Company</a></li>
-                            <li><a href="team.html">Meet our team</a></li>
-                            <li><a href="cases.html">Case stories</a></li>
-                            <li><a href="blog.html">Latest news</a></li>
+                            <li><a href="{{ route('services.cloud') }}">Cloud Computing</a></li>
+                            <li><a href="{{ route('services.disaster') }}">Disaster Recovery</a></li>
+                            <li><a href="{{ route('services.secure') }}">Secure Success</a></li>
+                            <li><a href="{{ route('services.telecom') }}">Telecom Services</a></li>
+                            {{-- <li><a href="{{ route('services.consultancy') }}">Business Consultancy</a></li> --}}
                             <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
                         {{-- <ul class="footer-widget__explore-list footer-widget__explore-list-two list-unstyled">
