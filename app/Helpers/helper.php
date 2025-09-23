@@ -106,7 +106,7 @@ function slider()
         ],
         [
             'title' => 'Telecommunications Services',
-            'description' => 'Global Voice, Data & Cloud Connectivity Solutions.',
+            'description' => 'Versatile professional telecom services delivery across continents.',
             'image' => 'assets/images/backgrounds/telecom.jpg',
             'url' => route('services.telecom'),
         ],
