@@ -143,3 +143,34 @@ function testimonials()
         ],
     ];
 }
+
+
+function telecom_services()
+{
+    return [
+        [
+            'name' => 'Telecom Network Delivery & Support',
+            'layout' => 'lt-image-right',
+            'image' => 'telecom.jpg',
+            'content' => 'We specialize in the comprehensive delivery and seamless installation of integrated telecommunications networks, ensuring that every component is expertly configured to meet the unique requirements of our clients. Our commitment extends far beyond the initial setup, as we provide robust and ongoing technical after-sales support to guarantee optimal network performance, reliability, and client satisfaction throughout the lifecycle of the solution.',
+        ],
+        [
+            'name' => 'Equipment Testing & Export',
+            'layout' => 'rt-image-left',
+            'image' => 'testing.jpg',
+            'content' => 'We source telecom equipment from top global vendors, conduct thorough technical testing, and handle all export logistics and compliance. Our value-added services ensure smooth international delivery and deployment, supporting partners and customers for reliable, high-performance operations in any country.',
+        ],
+        [
+            'name' => 'M&A Expertise',
+            'layout' => 'lt-image-right',
+            'image' => 'telecom-2.jpg',
+            'content' => 'M&A expertise of B2B and S2C operators in African countries - technical, financial, commercial, marketing analysis with strategy options for business development.',
+        ],
+        [
+            'name' => 'Telecom Investment Opportunities',
+            'layout' => 'rt-image-left',
+            'image' => 'telecom-3.jpg',
+            'content' => 'We offer comprehensive analysis of telecom investment opportunities, including startups and diversification of products, services, and market share. Our services ensure clients have access to the best investment opportunities and develop optimal strategies for business development.',
+        ],
+    ];
+}

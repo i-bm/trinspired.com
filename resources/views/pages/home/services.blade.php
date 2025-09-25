@@ -1,27 +1,5 @@
 <style>
-    .services {
-        padding: 50px 0;
-    }
 
-    .services h4 {
-        font-size: 30px;
-        font-weight: 300;
-        color: #000;
-        margin-bottom: 10px;
-    }
-
-    .services p {
-        color: #000;
-    }
-
-    .services .thm-btn {
-        align-self: flex-start;
-        border-radius: 50px;
-        padding: 10px 20px;
-        font-size: 16px;
-        text-transform: none;
-        font-weight: 300;
-    }
 </style>
 
 
