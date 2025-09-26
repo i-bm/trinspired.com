@@ -225,8 +225,8 @@ h4.prelims__text {
     margin-bottom: 10px;
 }
 
-.services p {
-    color: #000;
+.services p, .services-details__left p {
+    color: #000 !important;
 }
 
 .services .thm-btn {
