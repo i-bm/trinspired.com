@@ -1,5 +1,6 @@
 <!--CTA One Start-->
 <section class="cta-one">
+    <div class="cta-one-bg-overlay"></div>
     <div class="cta-one-bg" style="background-image: url({{ asset('assets/images/backgrounds/cta-one-bg.png') }})">
     </div>
     <div class="container">

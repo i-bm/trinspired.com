@@ -63,7 +63,16 @@ h6 {
     font-weight: 300 !important;
     border-radius: 50px !important;
     padding: 10px 20px !important;
-    align-self: flex-start
+    align-self: flex-start;
+}
+
+.thm-btn {
+    background: linear-gradient(to left, var(--thm-primary), var(--thm-seconday)) !important;
+}
+
+.thm-btn:hover {
+    border: 1.5px solid #fff;
+    color: var(--thm-primary);
 }
 
 .thm-breadcrumb li,
@@ -145,10 +154,6 @@ h4.prelims__text {
 }
 
 .services-details__top-text {
-    /* font-size: 16px;
-    font-weight: 400;
-    text-transform: none;
-    line-height: 32px; */
     color: var(--thm-black);
 }
 
@@ -236,4 +241,57 @@ h4.prelims__text {
     font-size: 16px;
     text-transform: none;
     font-weight: 300;
+}
+
+.main-menu .main-menu__list li ul li:hover>a,
+.stricky-header .main-menu__list li ul li:hover>a {
+    background: linear-gradient(to left, var(--thm-primary), var(--thm-seconday)) !important;
+    color: var(--thm-base);
+}
+
+
+.cta-one, .cta-one-bg  {
+
+    opacity: 1 !important;
+
+}
+
+/* .page-header__bg {
+    background: radial-gradient(circle, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+} */
+.cta-one__inner{
+z-index: 3;
+}
+.cta-one-bg-overlay {
+    background: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+    /* opacity: 0.5; */
+
+}
+.cta-one__btn{
+    background-color: #fff!important;
+    color: #fff !important;
+}
+
+.locations__single:hover {
+    background: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+}
+
+.page-header__bg-overlay {
+    background: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.5;
+
 }

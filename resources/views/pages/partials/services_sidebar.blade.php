@@ -19,6 +19,9 @@
                 <li class="{{ request()->is('services.consultancy') ? 'active' : '' }}"><a
                         href="{{ route('services.consultancy') }}">Business Consultancy <span
                             class="icon-right-arrow"></span></a></li>
+                <li class="{{ request()->is('services.acronis') ? 'active' : '' }}"><a
+                        href="{{ route('services.acronis') }}">ACRONIS Advanced Endpoint Security <span
+                            class="icon-right-arrow"></span></a></li>
                 {{-- <li class="{{ request()->is('services.trading') ? 'active' : '' }}"><a
                         href="{{ route('services.trading') }}">Trading Solutions <span
                             class="icon-right-arrow"></span></a>

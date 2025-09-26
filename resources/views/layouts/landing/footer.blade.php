@@ -28,15 +28,8 @@
                             <li><a href="{{ route('services.disaster') }}">Disaster Recovery</a></li>
                             <li><a href="{{ route('services.secure') }}">Secure Success</a></li>
                             <li><a href="{{ route('services.telecom') }}">Telecom Services</a></li>
-                            {{-- <li><a href="{{ route('services.consultancy') }}">Business Consultancy</a></li> --}}
                             <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
-                        {{-- <ul class="footer-widget__explore-list footer-widget__explore-list-two list-unstyled">
-                            <li><a href="contact.html">Support</a></li>
-                            <li><a href="faq.html">Terms of use</a></li>
-                            <li><a href="about.html">Privacy policy</a></li>
-                            <li><a href="faq.html">Help</a></li>
-                        </ul> --}}
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-8 wow fadeInUp" data-wow-delay="400ms">

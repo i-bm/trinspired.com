@@ -53,4 +53,12 @@ class ServicesController extends Controller
 
         return view('pages.services.trading', compact('title', 'description'));
     }
+
+    public function acronis()
+    {
+        $description = 'ACRONIS Advanced Endpoint Security';
+        $title = 'ACRONIS Advanced Endpoint Security';
+
+        return view('pages.services.acronis', compact('title', 'description'));
+    }
 }

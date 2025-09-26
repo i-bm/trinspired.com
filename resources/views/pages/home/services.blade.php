@@ -75,7 +75,7 @@
                                     alt="acronis advanced endpoint security" class="img-fluid">
                             </div>
                             <div class="col-lg-6 d-flex flex-column">
-                                <h4>ACRONIS Advanced Endpoint Security + EDR with MS 365 Email Security</h4>
+                                <h4>ACRONIS Advanced Endpoint Security</h4>
                                 <p>MSP-class EDR designed to DETECT and RESPOND to advanced cyber threats and attacks
                                     that sneak past other defenses with guided interpretations for streamlined analysis,
                                     and unique recovery capabilities for true business continuity.</p>

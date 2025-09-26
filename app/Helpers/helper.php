@@ -12,7 +12,7 @@ function nav_services()
             'url' => route('services.disaster'),
         ],
         [
-            'name' => 'Secure Success',
+            'name' => 'Secure Access',
             'url' => route('services.secure'),
         ],
         [
@@ -172,5 +172,36 @@ function telecom_services()
             'image' => 'telecom-3.jpg',
             'content' => 'We offer comprehensive analysis of telecom investment opportunities, including startups and diversification of products, services, and market share. Our services ensure clients have access to the best investment opportunities and develop optimal strategies for business development.',
         ],
+    ];
+}
+
+
+function acronis_services()
+{
+    return [
+        [
+            'name' => 'Lightning-fast endpoint threat detection and incident analysis',
+            'layout' => 'lt-image-right',
+            'image' => 'acronis.jpg',
+            'content' => '<p>Unlock minutes-not-hours analysis at a scale with automated correlation and MI-based guided attack interpretations</p> <p>Increase visibility across MITRE ATT&CK®</p> <p>Get better outcomes and fewer false positives with prioritization of potential security incidents</p>',
+        ],
+        [
+            'name' => 'Unique recovery capabilities for true business continuity',
+            'layout' => 'rt-image-left',
+            'image' => 'acronis_2.jpg',
+            'content' => '<p>Protect across the NIST framework with comprehensive threat response tools – Identify, Protect, Detect, Respond & Recover</p> <p>Count on pre-integrated backup and recovery capabilities for true resilience where point-security solutions fail</p><p>Streamline remediation with a single-click response</p>',
+        ],
+        [
+            'name' => 'Rapid turn-on and scale with an MSP-class platform',
+            'layout' => 'lt-image-right',
+            'image' => 'acronis_3.jpg',
+            'content' => '<p>Turn on services rapidly on an existing Acronis console and software agent</p> <p>GScale services across multiple clients while preserving healthy margins – minimize OpEx by removing the need for a large security teams to operate</p><p>Work with a vendor ally focused on your success – not competing with you for your customer business</p>',
+        ],
+        // [
+        //     'name' => 'Automated response to advanced threats',
+        //     'layout' => 'rt-image-left',
+        //     'image' => 'acronis-4.jpg',
+        //     'content' => '<p>Automated response to advanced threats</p> <p>Get better outcomes and fewer false positives with prioritization of potential security incidents</p>',
+        // ],
     ];
 }

@@ -27,6 +27,7 @@
                         <h4 class="locations__mail-phone-box">
                             <a href="mailto:info@trinspired.com" class="locations__mail">info@trinspired.com</a>
                             <a href="tel:+233262644774" class="locations__phone">+233 26 264 4774</a>
+                            <br />
                         </h4>
                     </div>
                 </div>
