@@ -180,18 +180,15 @@
 <script src="{{ asset('assets/vendors/twentytwenty/jquery.event.move.js')}}"></script>
 <script src="{{ asset('assets/vendors/bxslider/js/jquery.bxslider.min.js')}}"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"
+    integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script>
+{{-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script> --}}
 
 
 <!-- template js -->
 <script src="{{ asset('assets/js/aivons.js')}}"></script>
 
-<!-- color switcher language -->
-{{-- <script src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js"></script>
-<script src="{{ asset('assets/js/jQuery.style.switcher.min.js')}}"></script>
-<script src="{{ asset('assets/js/lang.js')}}"></script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script src="{{ asset('assets/js/color-switcher.js')}}"></script> --}}
 
 </body>

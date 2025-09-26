@@ -99,7 +99,7 @@ function slider()
         //     'url' => route('services.secure'),
         // ],
         [
-            'title' => 'Acronis Advanced Endpoint Security',
+            'title' => 'Acronis Advanced Endpoint Security + EDR & XDR',
             'description' => 'NextGen AI Cybersecurity with multi domain referencing for holistic defense',
             'image' => 'assets/images/backgrounds/acronis.jpg',
             'url' => route('services.acronis'),
@@ -161,10 +161,10 @@ function telecom_services()
             'content' => 'We source telecom equipment from top global vendors, conduct thorough technical testing, and handle all export logistics and compliance. Our value-added services ensure smooth international delivery and deployment, supporting partners and customers for reliable, high-performance operations in any country.',
         ],
         [
-            'name' => 'M&A Expertise',
+            'name' => 'Mergers and Acquisitions (M&A) Expertise',
             'layout' => 'lt-image-right',
             'image' => 'telecom-2.jpg',
-            'content' => 'M&A expertise of B2B and S2C operators in African countries - technical, financial, commercial, marketing analysis with strategy options for business development.',
+            'content' => 'We provide M&A services for B2B and S2C operators in Europe and African countries. Our service provides complete technical, financial, commercial and marketing analysis with strategy options for business development.',
         ],
         [
             'name' => 'Telecom Investment Opportunities',
@@ -180,28 +180,34 @@ function acronis_services()
 {
     return [
         [
-            'name' => 'Lightning-fast endpoint threat detection and incident analysis',
+            'name' => 'Modernize your security service stack with XDR designed for service providers.',
             'layout' => 'lt-image-right',
+            'image' => 'acronis_incident_1.webp',
+            'content' => '<p>Cyberattacks become increasingly sophisticated and every business is vulnerable. To protect their clients, MSPs offering security services have had to choose between insufficient, incomplete protection, or complex solutions that are expensive and time consuming to deploy and maintain.</p>',
+        ],
+        [
+            'name' => 'Lightning-fast endpoint threat detection and incident analysis',
+            'layout' => 'rt-image-left',
             'image' => 'acronis.jpg',
             'content' => '<p>Unlock minutes-not-hours analysis at a scale with automated correlation and MI-based guided attack interpretations</p> <p>Increase visibility across MITRE ATT&CK®</p> <p>Get better outcomes and fewer false positives with prioritization of potential security incidents</p>',
         ],
         [
             'name' => 'Unique recovery capabilities for true business continuity',
-            'layout' => 'rt-image-left',
+            'layout' => 'lt-image-right',
             'image' => 'acronis_2.jpg',
             'content' => '<p>Protect across the NIST framework with comprehensive threat response tools – Identify, Protect, Detect, Respond & Recover</p> <p>Count on pre-integrated backup and recovery capabilities for true resilience where point-security solutions fail</p><p>Streamline remediation with a single-click response</p>',
         ],
         [
             'name' => 'Rapid turn-on and scale with an MSP-class platform',
-            'layout' => 'lt-image-right',
+            'layout' => 'rt-image-left',
             'image' => 'acronis_3.jpg',
-            'content' => '<p>Turn on services rapidly on an existing Acronis console and software agent</p> <p>GScale services across multiple clients while preserving healthy margins – minimize OpEx by removing the need for a large security teams to operate</p><p>Work with a vendor ally focused on your success – not competing with you for your customer business</p>',
+            'content' => '<p>MSP-class EDR designed to DETECT and RESPOND to advanced cyber threats and attacks that sneak past other defenses with guided interpretations for streamlined analysis, and unique recovery capabilities for true business continuity.</p>',
         ],
-        // [
-        //     'name' => 'Automated response to advanced threats',
-        //     'layout' => 'rt-image-left',
-        //     'image' => 'acronis-4.jpg',
-        //     'content' => '<p>Automated response to advanced threats</p> <p>Get better outcomes and fewer false positives with prioritization of potential security incidents</p>',
-        // ],
+        [
+            'name' => 'Unlock complete protection with XDR that spans across NIST',
+            'layout' => 'lt-image-right',
+            'image' => 'acronis_incident_2.webp',
+            'content' => '<p>Stop counting on multiple-point security solutions for protection against the plethora of complex threats.</p> <p>Comprehensive protection of endpoints, vulnerable attack surfaces and data doesn’t have to requires multiple solution integrations introducing high resource needs and costs, security silos, long time to value and additional staffing.</p>',
+        ],
     ];
 }
