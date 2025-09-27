@@ -295,3 +295,12 @@ z-index: 3;
     opacity: 0.5;
 
 }
+
+/* scroll to top */
+.scroll-to-top {
+    background: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+}
+
+.footer-widget__contact-list li .icon i {
+    /* color: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important; */
+}

@@ -8,7 +8,7 @@
 <section class="services-details">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="services-details__left">
                     {{-- <div class="services-details__img">
                         <img src="{{ asset('assets/images/services/services-details-img-1.jpg') }}" alt="">
@@ -208,7 +208,7 @@
                 </div> <!-- Services Details Left End -->
             </div>
 
-            @include('pages.partials.services_sidebar')
+            {{-- @include('pages.partials.services_sidebar') --}}
         </div>
     </div>
 </section>

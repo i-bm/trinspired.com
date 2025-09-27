@@ -8,11 +8,11 @@
 <section class="services-details">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="services-details__left">
-                    <div class="services-details__img">
+                    {{-- <div class="services-details__img">
                         <img src="{{ asset('assets/images/services/services-details-img-1.jpg') }}" alt="">
-                    </div>
+                    </div> --}}
                     <div class="services-details__top-content">
                         <h2 class="services-details__top-title">Business Consultancy & Trading Services </h2>
 
@@ -23,6 +23,25 @@
                             development and deployment, project management, business development and training.
                         </p>
                         <br />
+
+                        {{-- <div class="row d-flex align-items-center wow fadeIn" style="margin-bottom: 100px;"
+                            data-wow-delay="100ms" data-wow-duration="3500ms">
+                            <div class="col-lg-6 d-flex flex-column">
+                                <h4> Highly experienced domains: </h4>
+
+                                <p>Mergers & Acquisitions in telecoms</p>
+                                <p>Project Management</p>
+                                <p>Software Development & Deployment</p>
+                                <p>Business Consulting</p>
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <a href="{{ asset('assets/images/resources/business-man.jpg') }}"><img
+                                        src=" {{ asset('assets/images/resources/business-man.jpg') }}" alt="Consultancy"
+                                        class="img-fluid rounded-3 shadow"></a>
+
+                            </div>
+                        </div> --}}
+
                         <h4 class="services-details__top-text"> Highly experienced domains: </h4>
                         <ul class="services-details__top-list">
                             <li>Mergers & Acquisitions in telecoms</li>
@@ -103,7 +122,7 @@
                 </div> <!-- Services Details Left End -->
             </div>
 
-            @include('pages.partials.services_sidebar')
+            {{-- @include('pages.partials.services_sidebar') --}}
         </div>
     </div>
 </section>

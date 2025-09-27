@@ -7,7 +7,7 @@
 <section class="services" style="padding-top: 120px;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="services-details__left">
                     @foreach (telecom_services() as $service)
                     <div class="row d-flex align-items-center wow fadeIn  @if($service['layout'] == 'lt-image-right') flex-row-reverse @endif"
@@ -26,7 +26,7 @@
                 </div> <!-- Services Details Left End -->
             </div>
 
-            @include('pages.partials.services_sidebar')
+            {{-- @include('pages.partials.services_sidebar') --}}
         </div>
     </div>
 </section>

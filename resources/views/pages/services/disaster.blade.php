@@ -4,16 +4,12 @@
 
 
 <!--Services Details Start-->
-<section class="services-details">
+<section class="services-details1" style="padding-top: 50px;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="services-details__left">
 
-
-                    {{-- <div class="services-details__img">
-                        <img src="{{ asset('assets/images/resources/disaster_design.png') }}" alt="" class="img-fluid">
-                    </div> --}}
                     <div class="services-details__top-content">
                         <h2 class="services-details__top-title">Disaster Recovery-Business Continuity</h2>
 
@@ -154,7 +150,7 @@
                 </div> <!-- Services Details Left End -->
             </div>
 
-            @include('pages.partials.services_sidebar')
+            {{-- @include('pages.partials.services_sidebar') --}}
         </div>
     </div>
 </section>

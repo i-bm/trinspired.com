@@ -7,7 +7,7 @@
 <section class="services" style="padding-top: 50px;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
 
                 {{-- <h3 class="services-details__top-title mb-4">MSP-class EDR designed to DETECT and RESPOND to
                     advanced
@@ -39,7 +39,7 @@
                 </div> <!-- Services Details Left End -->
             </div>
 
-            @include('pages.partials.services_sidebar')
+            {{-- @include('pages.partials.services_sidebar') --}}
         </div>
     </div>
 </section>

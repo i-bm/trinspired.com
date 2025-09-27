@@ -23,6 +23,10 @@ function nav_services()
             'name' => 'Business Consultancy',
             'url' => route('services.consultancy'),
         ],
+        [
+            'name' => 'Acronis Security',
+            'url' => route('services.acronis'),
+        ],
         // [
         //     'name' => 'Trading Solutions',
         //     'url' => route('services.trading'),
@@ -211,3 +215,27 @@ function acronis_services()
         ],
     ];
 }
+
+    function cloud_use_cases()
+    {
+        return [
+            [
+                'name' => 'Migration from local to cloud infrastructure',
+                'image' => 'cloud-1.jpg',
+                'content' => '<p>Local or on-premise production systems are migrated to cloud infrastructure at record speeds and at increased performance and availability Seamless transition you can trust!</p>',
+                'layout' => 'lt-image-right',
+            ],
+            [
+                'name' => 'Cloud deployment',
+                'image' => 'cloud-2.jpg',
+                'content' => '<p>Servers are provisioned in seconds for application deployments and hosting. Only high performance, reliable and secure components are employed in the infrastructure Cloud deployment made easy and cost-effective</p>',
+                'layout' => 'rt-image-left',
+            ],
+            [
+                'name' => 'Multi-Cloud deployment',
+                'image' => 'cloud-3.jpg',
+                'content' => '<p>Multi-cloud architecture for multi-location data protection, multi-layer business continuity strategies and more. Multi-cloud services for lower recovery time objective.</p>',
+                'layout' => 'lt-image-right',
+            ],
+        ];
+    }
