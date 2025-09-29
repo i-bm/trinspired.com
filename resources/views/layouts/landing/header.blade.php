@@ -43,11 +43,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/aivons.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/aivons-responsive.css')}}" />
 
-    <!-- RTL Styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/aivons-rtl.css')}}">
 
-    <!-- color css -->
-    <link rel="stylesheet" id="jssDefault" href="{{ asset('assets/css/colors/color-default.css')}}">
     <link rel="stylesheet" id="jssMode" href="{{ asset('assets/css/modes/aivons-normal.css')}}">
 
     <!-- toolbar css -->
