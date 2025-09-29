@@ -1,5 +1,17 @@
 <?php
 
+function company()
+{
+    return [
+        'name' => 'Trinspired Consult',
+        'phone' => '+254 723 456 789',
+        'email' => 'info@trinspiredconsult.com',
+        'address' => '4th Floor, Silverstream House 45 Fitzroy Street, Fitzrovia, London, W1T 6EB United Kingdom',
+        'address_africa' => '14 Senchi Street, Airport Residential Area, Airport, Accra, Ghana',
+        'description' => 'Trinspired Consult provides a range of Telecommunication, Information Technology, Business Consultancy, and Trading services, leveraging decades of experience and a team of international experts to deliver solutions for institutions in Europe and Africa. The company offers specialized  Telecommunication and IT services like Cloud Computing and Business Continuity Planning, which integrate multiple technologies to ensure high availability of data and systems.',
+    ];
+}
+
 function nav_services()
 {
     return [

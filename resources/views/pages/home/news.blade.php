@@ -2,8 +2,8 @@
 <section class="news-one">
     <div class="container">
         <div class="section-title text-center">
-            <h2 class="section-title__title">What’s Happening</h2>
-            <span class="section-title__tagline">Checkout what we have been doing</span>
+            <h2 class="section-title__title">Threat Feeds</h2>
+            <span class="section-title__tagline">Checkout the latest security feeds</span>
         </div>
         <div class="row">
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">

@@ -41,11 +41,7 @@
                     COMPANY
                 </h4>
             </div>
-            <p>Trinspired Consult is a provider of world class Telecommunication and Information Technology
-                solutions and services, as well as General Business Consultancy and Trading services.
-                With a team made up of experts and partners from North America, Africa, Middle East & Europe, we
-                have for over two decades provided consultancy, business consulting, engineering and implementation
-                services across verticals in Africa and Europe.</p>
+            <p>{{ company()['description'] }}</p>
         </div>
 
         <div class="col-lg-6">

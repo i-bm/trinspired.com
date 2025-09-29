@@ -2,11 +2,10 @@
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-lg-7">
-                <h4 class="prelims__text">Trinspired Consult is a provider of world class Telecommunication and
-                    Information Technology solutions and services, as well as General Business Consultancy and Trading
-                    services.
-                    {{-- <a href="#">read more
-                        <i class="fal fa-long-arrow-right ps-2 fs-7"></i></a> --}}
+                <h4 class="prelims__text">
+                    {{ Str::limit(company()['description'], 220) }}
+                    <a href="{{ route('company') }}">read more
+                        <i class="fal fa-long-arrow-right ps-2 fs-7"></i></a>
                 </h4>
             </div>
             <div class="col-lg-5">

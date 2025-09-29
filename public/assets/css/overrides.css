@@ -67,7 +67,8 @@ h6 {
 }
 
 .thm-btn {
-    background: linear-gradient(to left, var(--thm-primary), var(--thm-seconday)) !important;
+    background: var(--thm-primary) !important;
+    /* background: linear-gradient(to left, var(--thm-primary), var(--thm-seconday)) !important; */
 }
 
 .thm-btn:hover {
@@ -245,8 +246,9 @@ h4.prelims__text {
 
 .main-menu .main-menu__list li ul li:hover>a,
 .stricky-header .main-menu__list li ul li:hover>a {
-    background: linear-gradient(to left, var(--thm-primary), var(--thm-seconday)) !important;
-    color: var(--thm-base);
+    background: var(--thm-primary) !important;
+    /* background: linear-gradient(to left, var(--thm-primary), var(--thm-seconday)) !important;
+    color: var(--thm-base); */
 }
 
 
@@ -263,7 +265,7 @@ h4.prelims__text {
 z-index: 3;
 }
 .cta-one-bg-overlay {
-    background: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+    background: var(--thm-primary) !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -275,16 +277,17 @@ z-index: 3;
 
 }
 .cta-one__btn{
-    background-color: #fff!important;
-    color: #fff !important;
+    /* background-color: #fff!important; */
+    /* color: #fff !important; */
 }
 
 .locations__single:hover {
-    background: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+    background: var(--thm-primary) !important;
 }
 
 .page-header__bg-overlay {
     background: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -298,7 +301,7 @@ z-index: 3;
 
 /* scroll to top */
 .scroll-to-top {
-    background: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+    background: var(--thm-primary) !important;
 }
 
 .footer-widget__contact-list li .icon i {
