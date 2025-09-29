@@ -11,10 +11,10 @@
                             <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo-light.png') }}"
                                     width="200" alt=""></a>
                         </div>
-                        <p class="footer-widget__text">Trinspired Consult is a provider of world class Telecommunication
-                            and Information
-                            Technology solutions and services, as well as General Business Consultancy and Trading
-                            services.
+                        <p class="footer-widget__text">Trinspired Consult provides a range of Telecommunication,
+                            Information Technology, Business Consultancy, and Trading services, leveraging decades of
+                            experience and a team of international experts to deliver solutions for institutions in
+                            Europe and Africa.
                         </p>
 
                     </div>
@@ -26,7 +26,7 @@
                             <li><a href="{{ route('company') }}">The Company</a></li>
                             <li><a href="{{ route('services.cloud') }}">Cloud Computing</a></li>
                             <li><a href="{{ route('services.disaster') }}">Disaster Recovery</a></li>
-                            <li><a href="{{ route('services.secure') }}">Secure Success</a></li>
+                            <li><a href="{{ route('services.secure') }}">Secure Access</a></li>
                             <li><a href="{{ route('services.telecom') }}">Telecom Services</a></li>
                             <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>

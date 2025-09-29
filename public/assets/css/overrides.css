@@ -1,3 +1,7 @@
+:root {
+    --thm-primary: #5F0067 !important;
+}
+
 .page-header__bg {
     background-color: transparent !important;
     background-blend-mode: luminosity;
@@ -73,7 +77,8 @@ h6 {
 
 .thm-btn:hover {
     border: 1.5px solid #fff;
-    color: var(--thm-primary);
+    /* color: var(--thm-primary); */
+    color: #fff !important;
 }
 
 .thm-breadcrumb li,
@@ -277,16 +282,23 @@ z-index: 3;
 
 }
 .cta-one__btn{
-    /* background-color: #fff!important; */
+    background-color: #fff!important;
     /* color: #fff !important; */
+    transition: all 500ms ease !important;
 }
 
+.cta-one__btn:hover{
+    background-color: var(--thm-primary) !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+
+}
 .locations__single:hover {
     background: var(--thm-primary) !important;
 }
 
 .page-header__bg-overlay {
-    background: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important;
+    background: linear-gradient(180deg, var(--thm-primary)  180%, var(--thm-seconday) 0%) !important;
 
     position: absolute;
     top: 0;
@@ -299,11 +311,3 @@ z-index: 3;
 
 }
 
-/* scroll to top */
-.scroll-to-top {
-    background: var(--thm-primary) !important;
-}
-
-.footer-widget__contact-list li .icon i {
-    /* color: linear-gradient(180deg, var(--thm-primary) 0%, var(--thm-seconday) 100%) !important; */
-}
