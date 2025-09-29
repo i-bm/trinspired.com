@@ -135,8 +135,8 @@ function testimonials()
         [
             'title' => 'Testimonials',
             'description' => 'The team at Trinspired Consult knows what they are doing',
-            'name' => 'Todd Higgins',
-            'Company' => 'Insurance Company ',
+            // 'name' => 'CFO',
+            'Company' => 'An Insurance Company ',
             // 'role' => 'CFO',
             'image' => 'assets/images/testimonial/testimonials-1-2.png',
         ],
@@ -144,16 +144,16 @@ function testimonials()
 
             'title' => 'Testimonials',
             'description' => "⁠If Trinspired Consult is your cloud infrastructure and data protection service provider, we'll award you the contract",
-            'name' => 'Gordon King',
-            'Company' => 'Pendleton Trading',
+            'name' => '',
+            'Company' => 'A National Regulator to a software service provider',
             // 'role' => 'CFO',
             'image' => 'assets/images/testimonial/testimonials-2-2.png',
         ],
         [
             'title' => 'Testimonials',
-            'description' => 'Since Trinspired Consult started hosting our production infrastructure, all the complaints from users have ceased.',
-            'name' => 'James Fletcher',
-            'Company' => 'Financial Institution',
+            'description' => '⁠⁠Since Trinspired Consult started hosting our production infrastructure, all the complaints from users have ceased',
+            'name' => '',
+            'Company' => 'A Financial Institution',
             // 'role' => 'CFO',
             'image' => 'assets/images/testimonial/testimonials-2-3.png',
         ],
@@ -248,6 +248,34 @@ function acronis_services()
                 'image' => 'cloud-3.jpg',
                 'content' => '<p>Multi-cloud architecture for multi-location data protection, multi-layer business continuity strategies and more. Multi-cloud services for lower recovery time objective.</p>',
                 'layout' => 'lt-image-right',
+            ],
+        ];
+    }
+
+
+    function news()
+    {
+        return [
+            [
+                'title' => 'Microsoft Seizes 338 Domains in RaccoonO365 Takedown',
+                'image' => 'FY26_Q1_Cybersecurity-DCU-Disruption-HeaderSocial_v3-1.png',
+                'content' => "Microsoft's Digital Crimes Unit (DCU) has dismantled RaccoonO365, one of the fastest-growing phishing services targeting Microsoft 365 accounts. Acting under a court order from the Southern District of New York, the DCU seized 338 domains tied to the operation, disrupting its infrastructure. Tracked by Microsoft as Storm-2246, RaccoonO365 sold phishing kits that impersonated Microsoft branding, enabling even unskilled actors to steal user credentials on a large scale.",
+                "date" => "2025-09-22",
+                "url" => "https://blogs.microsoft.com/on-the-issues/2025/09/16/microsoft-seizes-338-websites-to-disrupt-rapidly-growing-raccoono365-phishing-service/",
+            ],
+            [
+                'title' => 'Google Patches Sixth Chrome Zero-Day Exploited in Attacks This Year',
+                'image' => 'Google-Chrome.jpg',
+                'content' => "Google has released emergency security updates to patch a Chrome zero-day vulnerability. This is the sixth zero-day tagged as exploited in attacks since the beginning of the year. The zero-day vulnerability is caused by a type confusion weakness in the web browser's V8 JavaScript engine. While Chrome automatically updates when new security patches are available, users can speed up the process manually using the browser's Help menu",
+                "date" => "2025-09-18",
+                "url" => "https://www.bleepingcomputer.com/news/security/google-patches-sixth-chrome-zero-day-exploited-in-attacks-this-year/",
+            ],
+            [
+                'title' => 'New FileFix Variant Delivers StealC Malware Through Multilingual Phishing Site',
+                'image' => '04edd27cb6f57ba9fc9390de16b1409d.jpg',
+                'content' => "A new campaign that's leveraging a variant of the FileFix social engineering tactic to deliver the StealC information stealer malware was discovered by Acronis researchers. The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection. The final stage deploys a loader that executes the StealC infostealer, targeting browsers, cryptocurrency wallets, messaging apps, and cloud credentials.",
+                "date" => "2025-09-18",
+                "url" => "https://www.acronis.com/en/tru/posts/filefix-in-the-wild-new-filefix-campaign-goes-beyond-poc-and-leverages-steganography/",
             ],
         ];
     }

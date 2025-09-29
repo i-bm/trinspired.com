@@ -6,7 +6,7 @@
                 <div class="testimonials-one__left">
                     <div class="section-title text-left">
                         <h2 class="section-title__title">What they are talking About</h2>
-                        <span class="section-title__tagline">Trusted by more than 4,200 customers</span>
+                        {{-- <span class="section-title__tagline">Trusted by more than 4,200 customers</span> --}}
                     </div>
                 </div>
             </div>
@@ -17,12 +17,12 @@
                         <div class="testimonials-one__single">
                             <p class="testimonials-one__text">{{ $testimonial['description'] }}</p>
                             <div class="testimonials-one__client-info">
-                                <h5 class="testimonials-one__client-name">{{ $testimonial['name'] }}</h5>
+                                <h5 class="testimonials-one__client-name">{{ $testimonial['name'] ?? '' }}</h5>
                                 <p class="testimonials-one__client-title">{{ $testimonial['Company'] }}</p>
                             </div>
-                            <div class="testimonials-one__client-img">
+                            {{-- <div class="testimonials-one__client-img">
                                 <img src="{{  asset($testimonial['image']) }}" alt="">
-                            </div>
+                            </div> --}}
                             <div class="testimonials-one__quote"></div>
                         </div>
                         @endforeach
