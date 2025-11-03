@@ -114,21 +114,25 @@
         <ul class="mobile-nav__contact list-unstyled">
             <li>
                 <i class="fa fa-envelope"></i>
-                <a href="mailto:info@trinspired.com">info@trinspired.com</a>
+                <a href="mailto:{{ config('misc.email') }}">{{ config('misc.email') }}</a>
             </li>
             <li>
                 <i class="fa fa-phone-alt"></i>
-                <a href="tel:+233262644774">+233 26 264 4774</a>
+                <a href="tel:{{ config('misc.africa_phone') }}">{{ config('misc.africa_phone') }}</a>
+            </li>
+            <li>
+                <i class="fa fa-phone-alt"></i> 
+                <a href="tel:{{ config('misc.global_phone') }}">{{ config('misc.global_phone') }}</a>
             </li>
         </ul><!-- /.mobile-nav__contact -->
-        <div class="mobile-nav__top">
+        {{-- <div class="mobile-nav__top">
             <div class="mobile-nav__social">
                 <a href="#" class="fab fa-twitter"></a>
                 <a href="#" class="fab fa-facebook-square"></a>
                 <a href="#" class="fab fa-pinterest-p"></a>
                 <a href="#" class="fab fa-instagram"></a>
             </div><!-- /.mobile-nav__social -->
-        </div><!-- /.mobile-nav__top -->
+        </div><!-- /.mobile-nav__top --> --}}
 
 
 

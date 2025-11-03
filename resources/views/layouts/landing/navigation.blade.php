@@ -54,7 +54,9 @@
                 </div>
                 <div class="main-menu-wrapper__phone-contact">
                     <p>Need help? Talk to an expert</p>
-                    <a href="tel:+233262644774">+233 26 264 4774</a>
+                    <a href="tel:{{ config('misc.africa_phone') }}">{{ config('misc.africa_phone') }}</a>
+                    <br />
+                    <a href="tel:{{ config('misc.global_phone') }}">{{ config('misc.global_phone') }}</a>
                 </div>
             </div>
         </div>
