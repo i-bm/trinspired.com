@@ -14,8 +14,8 @@
                         <p class="locations__text">4th Floor, Silverstream House 45 Fitzroy Street, Fitzrovia,
                             London, W1T 6EB United Kingdom </p>
                         <h4 class="locations__mail-phone-box">
-                            <a href="mailto:info@trinspired.com" class="locations__mail">info@trinspired.com</a>
-                            <a href="tel:+447404831774" class="locations__phone">+44 7404 831774</a>
+                            <a href="mailto:{{ config('misc.email') }}" class="locations__mail">{{ config('misc.email') }}</a>
+                            <a href="tel:{{ config('misc.global_phone') }}" class="locations__phone">{{ config('misc.global_phone') }}</a>
                         </h4>
                     </div>
                 </div>
@@ -25,8 +25,8 @@
                         <h3 class="locations__title">Africa Regional Office, Ghana</h3>
                         <p class="locations__text">14 Senchi Street, Airport Residential Area, Airport, Accra, Ghana</p>
                         <h4 class="locations__mail-phone-box">
-                            <a href="mailto:info@trinspired.com" class="locations__mail">info@trinspired.com</a>
-                            <a href="tel:+233262644774" class="locations__phone">+233 26 264 4774</a>
+                            <a href="mailto:{{ config('misc.email') }}" class="locations__mail">{{ config('misc.email') }}</a>
+                            <a href="tel:{{ config('misc.africa_phone') }}" class="locations__phone">{{ config('misc.africa_phone') }}</a>
                             <br />
                         </h4>
                     </div>
