@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\Pages\CompanyController;
 use App\Http\Controllers\Pages\ContactController;
+use App\Http\Controllers\Pages\EventController;
 use App\Http\Controllers\Pages\HomeController;
 use App\Http\Controllers\Pages\ServicesController;
-use App\Http\Controllers\Pages\CompanyController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -16,3 +17,5 @@ Route::get('/services/business-consultancy', [ServicesController::class, 'consul
 Route::get('/services/trading-solutions', [ServicesController::class, 'trading'])->name('services.trading');
 Route::get('/services/acronis-security', [ServicesController::class, 'acronis'])->name('services.acronis');
 Route::get('/company', [CompanyController::class, 'index'])->name('company');
+
+Route::get('/events/webinar', [EventController::class, 'webinar'])->name('events.webinar');

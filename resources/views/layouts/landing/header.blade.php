@@ -57,9 +57,10 @@
 
 
 </head>
+@if(!request()->is('events/webinar'))
 <div class="preloader">
     <div class="preloader__image"></div><!-- /.preloader__image -->
 </div>
 <!-- /.preloader -->
-
+@endif
 <div class="page-wrapper">

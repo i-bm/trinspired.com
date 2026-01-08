@@ -26,29 +26,11 @@
                             </ul>
                         </li>
                         <li><a href="{{ route('company') }}">Company</a></li>
-                        {{-- <li class="dropdown">
-                            <a href="#">Pages</a>
-                            <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li><a href="testimonials.html">Testimonials</a></li>
-                                <li><a href="faq.html">FAQS</a></li>
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                        </li> --}}
                         <li><a href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="main-menu-wrapper__right">
-                {{-- <div class="main-menu-wrapper__social-box">
-                    <div class="main-menu-wrapper__social">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="clr-dri"><i class="fab fa-dribbble"></i></a>
-                        <a href="#" class="clr-ins"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div> --}}
                 <div class="main-menu-wrapper__search-box">
                     <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass1"></a>
                 </div>
