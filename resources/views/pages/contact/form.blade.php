@@ -8,17 +8,19 @@
                         <h2 class="section-title__title">get in touch with our team</h2>
                         {{-- <span class="section-title__tagline">Trusted by more than 4,200 customers</span> --}}
                     </div>
-                    <div class="message-box__social">
+                    {{-- <div class="message-box__social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="clr-dri"><i class="fab fa-dribbble"></i></a>
                         <a href="#" class="clr-ins"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="col-xl-8 col-lg-7">
                 <div class="message-box__right">
-                    <form action="#" class="comment-one__form contact-form-validated" novalidate="novalidate">
+                    <form action="{{ route('contact.submit') }}" method="POST"
+                        class="comment-one__form contact-form-validated" novalidate="novalidate">
+                        @csrf
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
@@ -45,7 +47,14 @@
                                         <i class="far fa-comment"></i>
                                     </div>
                                 </div>
-                                <button type="submit" class="thm-btn comment-form__btn">Send a message</button>
+                                @if(config('services.turnstile.site_key'))
+                                <div class="cf-turnstile" data-sitekey="{{ config('services.turnstile.site_key') }}"
+                                    style="margin-bottom: 20px;"></div>
+                                @endif
+                                <button type="submit" class="thm-btn comment-form__btn" id="contact-submit-btn">
+                                    <span class="btn-text">Send a message</span>
+                                    <span class="btn-loading" style="display: none;">Please wait...</span>
+                                </button>
                             </div>
                         </div>
                     </form>

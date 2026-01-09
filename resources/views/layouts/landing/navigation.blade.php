@@ -26,6 +26,7 @@
                             </ul>
                         </li>
                         <li><a href="{{ route('company') }}">Company</a></li>
+                        <li><a href="{{ route('events.webinar') }}">Events</a></li>
                         <li><a href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>

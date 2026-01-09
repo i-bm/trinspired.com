@@ -121,7 +121,7 @@
                 <a href="tel:{{ config('misc.africa_phone') }}">{{ config('misc.africa_phone') }}</a>
             </li>
             <li>
-                <i class="fa fa-phone-alt"></i> 
+                <i class="fa fa-phone-alt"></i>
                 <a href="tel:{{ config('misc.global_phone') }}">{{ config('misc.global_phone') }}</a>
             </li>
         </ul><!-- /.mobile-nav__contact -->
@@ -194,5 +194,9 @@
 <!-- template js -->
 <script src="{{ asset('assets/js/aivons.js')}}"></script>
 
+@if(config('services.turnstile.site_key'))
+<!-- Cloudflare Turnstile -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+@endif
 
 </body>
