@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Mail\ContactFormMail;
 use App\Models\ContactMessage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -64,32 +65,48 @@ class ContactController extends Controller
             ], 422);
         }
 
-        // Save to database
-        $contactMessage = ContactMessage::create([
-            'name' => $request->input('name'),
-            'email' => $request->input('email'),
-            'message' => $request->input('message'),
-            'ip_address' => $request->ip(),
-        ]);
-
-        // Send email notification
         try {
+            DB::beginTransaction();
+            // Save to database
+            $contactMessage = ContactMessage::create([
+                'name' => $request->input('name'),
+                'email' => $request->input('email'),
+                'message' => $request->input('message'),
+                'ip_address' => $request->ip(),
+            ]);
+
+            Log::info('Contact message saved: '.$contactMessage->name);
+
             $recipientEmail = config('misc.email', config('mail.from.address'));
-            Mail::to($recipientEmail)->send(
+
+            $mailSent = Mail::to($recipientEmail)->send(
                 new ContactFormMail(
                     $request->input('name'),
                     $request->input('email'),
                     $request->input('message')
                 )
             );
-        } catch (\Exception $e) {
-            // Log the error but don't fail the request
-            Log::error('Failed to send contact form email: '.$e->getMessage());
-        }
+            Log::info('Mail sent: '.json_encode($mailSent));
+            if (! $mailSent) {
+                Log::error('Failed to send email: '.$recipientEmail);
+                throw new \Exception('Failed to send email. Please try again.');
+            }
 
-        return response()->json([
-            'success' => true,
-            'message' => 'Thank you for your message! We will get back to you soon.',
-        ], 200);
+            DB::commit();
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Message sent successfully. We will get back to you soon.',
+            ], 200);
+        } catch (\Exception $e) {
+            DB::rollBack();
+            // Log the error but don't fail the request
+            Log::error('Failed to save contact message: '.$e->getMessage());
+
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to save contact message. Please try again.',
+            ], 500);
+        }
     }
 }
