@@ -38,9 +38,9 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="{{ route('home') }}">
-                                <img class="logo-main" src="{{ asset('assets/images/logo-white.webp') }}"
+                                <img class="logo-main" src="{{ asset('assets/images/logo-light.png') }}"
                                     alt="{{ config('app.name') }}">
-                                <img class="logo-mobile" src="{{ asset('assets/images/logo-white.webp') }}"
+                                <img class="logo-mobile" src="{{ asset('assets/images/logo-light.png') }}"
                                     alt="{{ config('app.name') }}">
                             </a>
                         </div>
