@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row gx-5">
             <div class="col-lg-4 col-sm-6">
-                <img src="{{ asset('assets/images/logo-white.webp') }}" class="logo-footer"
+                <img src="{{ asset('assets/images/logo-light.png') }}" class="logo-footer"
                     alt="{{ config('app.name') }}">
                 <div class="spacer-20"></div>
                 <p>{{ company()['description'] }}</p>
@@ -59,7 +59,8 @@
                     <div class="fw-bold text-white">
                         <i class="icofont-phone me-2 id-color"></i>Call Us
                     </div>
-                    <a href="tel:{{ config('misc.global_phone') }}">{{ config('misc.global_phone') }}</a>
+                    <a href="tel:{{ config('misc.global_phone') }}">{{ config('misc.global_phone') }}</a><br/>
+                    <a href="tel:{{ config('misc.africa_phone') }}">{{ config('misc.africa_phone') }}</a>
 
                     <div class="spacer-20"></div>
 
@@ -78,7 +79,7 @@
                 <div class="col-md-12">
                     <div class="de-flex">
                         <div class="de-flex-col">
-                            &copy; {{ date('Y') }} - {{ config('app.name') }} by Designesia
+                            &copy; {{ date('Y') }} - {{ config('app.name') }}
                         </div>
                         <ul class="menu-simple">
                             <li><a href="#">Terms &amp; Conditions</a></li>

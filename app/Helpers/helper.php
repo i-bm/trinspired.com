@@ -8,7 +8,7 @@ function company()
         'email' => 'info@trinspiredconsult.com',
         'address' => '4th Floor, Silverstream House 45 Fitzroy Street, Fitzrovia, London, W1T 6EB United Kingdom',
         'address_africa' => '14 Senchi Street, Airport Residential Area, Airport, Accra, Ghana',
-        'description' => 'Trinspired Consult provides a range of Telecommunication, Information Technology, Business Consultancy, and Trading services, leveraging decades of experience and a team of international experts to deliver solutions for institutions in Europe and Africa. The company offers specialized  Telecommunication and IT services like Cloud Computing and Business Continuity Planning, which integrate multiple technologies to ensure high availability of data and systems.',
+        'description' => 'Trinspired Consult provides a range of Telecommunication, Information Technology, Business Consultancy, and Trading services, leveraging decades of experience and a team of international experts to deliver solutions for institutions in Europe and Africa.',
     ];
 }
 
@@ -53,33 +53,38 @@ function services()
         [
             'name' => 'Cloud Computing',
             'url' => route('services.cloud'),
-            'description' => 'High Performance Cloud Computing Orchestration for Higher Efficiencies and Peace of Mind.',
+            'description' => 'High performance cloud orchestration for maximum efficiency and reliability.',
             'image' => 'assets/images/services/cloud.webp',
+            'icon' => 'assets/images/icons-white/cloud-storage.png',
             'content' => 'We provide turn-key cloud computing services that assures highest performance and availability, compliance with highest global data protection regulation, business continuity, multi-time zone support and connectivity to over 55 datacenters around the world and on every continent.',
         ],
         [
-            'name' => 'Disaster Recovery-Business Continuity',
+            'name' => 'Disaster Recovery',
             'url' => route('services.disaster'),
-            'description' => 'Continuity Assurance & Failover in seconds for any application on any device.',
+            'description' => 'Business continuity with instant failover for any application on any device.',
             'image' => 'assets/images/services/services-1-3.jpg',
+            'icon' => 'assets/images/icons-white/cloud-storage.png',
         ],
         [
-            'name' => 'Secure Success to Any Application on Any Device Anywhere',
+            'name' => 'Secure Access',
             'url' => route('services.secure'),
-            'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections.',
+            'description' => 'Secure remote access that accelerates connections and protects endpoints.',
             'image' => 'assets/images/services/services-1-1.jpg',
+            'icon' => 'assets/images/icons-white/encryption.png',
         ],
         [
-            'name' => 'Telecommunications Services',
+            'name' => 'Telecommunications',
             'url' => route('services.telecom'),
-            'description' => 'Global Voice, Data & Cloud Connectivity Solutions.',
+            'description' => 'Global voice, data and cloud connectivity solutions worldwide.',
             'image' => 'assets/images/services/services-2-1.jpg',
+            'icon' => 'assets/images/icons-white/monitoring.png',
         ],
         [
-            'name' => 'Business Consultancy & Trading Solutions',
+            'name' => 'Business Consultancy',
             'url' => route('services.consultancy'),
-            'description' => 'Strategic Consulting for Digital Transformation & Trading Solutions.',
+            'description' => 'Strategic consulting for digital transformation and trading solutions.',
             'image' => 'assets/images/services/services-3-1.jpg',
+            'icon' => 'assets/images/icons-white/settings.png',
         ],
     ];
 }
@@ -90,14 +95,14 @@ function slider()
         [
             'title' => 'Cloud Computing',
             'description' => 'High performance cloud computing orchestration for higher efficiencies...',
-            'image' => 'assets/images/backgrounds/cloud.jpg',
+            'image' => 'slider/2.webp',
             'url' => route('services.cloud'),
         ],
         [
             'title' => 'Disaster Recovery-Business Continuity',
             'description' => 'Continuity Assurance & Failover in seconds for any application on any device',
             // 'description' => 'Winning strategy across verticals',
-            'image' => 'assets/images/backgrounds/disaster_recover.png',
+            'image' => 'slider/disaster.jpeg',
             'url' => route('services.disaster'),
         ],
         [
@@ -105,7 +110,7 @@ function slider()
             'title' => 'Secure Access & Connection Acceleration',
             'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections',
             // 'description' => 'Securely access any application on any device anywhere',
-            'image' => 'assets/images/backgrounds/secure_access.jpg',
+            'image' => 'slider/1.webp',
             'url' => route('services.secure'),
         ],
         // [
@@ -117,13 +122,13 @@ function slider()
         [
             'title' => 'Acronis Advanced Endpoint Security + EDR & XDR',
             'description' => 'NextGen AI Cybersecurity with multi domain referencing for holistic defense',
-            'image' => 'assets/images/backgrounds/acronis.jpg',
+            'image' => 'slider/2.webp',
             'url' => route('services.acronis'),
         ],
         [
             'title' => 'Telecommunications Services',
             'description' => 'Versatile professional telecom services delivery across continents.',
-            'image' => 'assets/images/backgrounds/telecom.jpg',
+            'image' => 'slider/telecom.jpeg',
             'url' => route('services.telecom'),
         ],
     ];
@@ -160,7 +165,6 @@ function testimonials()
     ];
 }
 
-
 function telecom_services()
 {
     return [
@@ -190,7 +194,6 @@ function telecom_services()
         ],
     ];
 }
-
 
 function acronis_services()
 {
@@ -228,54 +231,53 @@ function acronis_services()
     ];
 }
 
-    function cloud_use_cases()
-    {
-        return [
-            [
-                'name' => 'Migration from local to cloud infrastructure',
-                'image' => 'cloud-1.jpg',
-                'content' => '<p>Local or on-premise production systems are migrated to cloud infrastructure at record speeds and at increased performance and availability Seamless transition you can trust!</p>',
-                'layout' => 'lt-image-right',
-            ],
-            [
-                'name' => 'Cloud deployment',
-                'image' => 'cloud-2.jpg',
-                'content' => '<p>Servers are provisioned in seconds for application deployments and hosting. Only high performance, reliable and secure components are employed in the infrastructure Cloud deployment made easy and cost-effective</p>',
-                'layout' => 'rt-image-left',
-            ],
-            [
-                'name' => 'Multi-Cloud deployment',
-                'image' => 'cloud-3.jpg',
-                'content' => '<p>Multi-cloud architecture for multi-location data protection, multi-layer business continuity strategies and more. Multi-cloud services for lower recovery time objective.</p>',
-                'layout' => 'lt-image-right',
-            ],
-        ];
-    }
+function cloud_use_cases()
+{
+    return [
+        [
+            'name' => 'Migration from local to cloud infrastructure',
+            'image' => 'cloud-1.jpg',
+            'content' => '<p>Local or on-premise production systems are migrated to cloud infrastructure at record speeds and at increased performance and availability Seamless transition you can trust!</p>',
+            'layout' => 'lt-image-right',
+        ],
+        [
+            'name' => 'Cloud deployment',
+            'image' => 'cloud-2.jpg',
+            'content' => '<p>Servers are provisioned in seconds for application deployments and hosting. Only high performance, reliable and secure components are employed in the infrastructure Cloud deployment made easy and cost-effective</p>',
+            'layout' => 'rt-image-left',
+        ],
+        [
+            'name' => 'Multi-Cloud deployment',
+            'image' => 'cloud-3.jpg',
+            'content' => '<p>Multi-cloud architecture for multi-location data protection, multi-layer business continuity strategies and more. Multi-cloud services for lower recovery time objective.</p>',
+            'layout' => 'lt-image-right',
+        ],
+    ];
+}
 
-
-    function news()
-    {
-        return [
-            [
-                'title' => 'Microsoft Seizes 338 Domains in RaccoonO365 Takedown',
-                'image' => 'FY26_Q1_Cybersecurity-DCU-Disruption-HeaderSocial_v3-1.png',
-                'content' => "Microsoft's Digital Crimes Unit (DCU) has dismantled RaccoonO365, one of the fastest-growing phishing services targeting Microsoft 365 accounts. Acting under a court order from the Southern District of New York, the DCU seized 338 domains tied to the operation, disrupting its infrastructure. Tracked by Microsoft as Storm-2246, RaccoonO365 sold phishing kits that impersonated Microsoft branding, enabling even unskilled actors to steal user credentials on a large scale.",
-                "date" => "2025-09-22",
-                "url" => "https://blogs.microsoft.com/on-the-issues/2025/09/16/microsoft-seizes-338-websites-to-disrupt-rapidly-growing-raccoono365-phishing-service/",
-            ],
-            [
-                'title' => 'Google Patches Sixth Chrome Zero-Day Exploited in Attacks This Year',
-                'image' => 'Google-Chrome.jpg',
-                'content' => "Google has released emergency security updates to patch a Chrome zero-day vulnerability. This is the sixth zero-day tagged as exploited in attacks since the beginning of the year. The zero-day vulnerability is caused by a type confusion weakness in the web browser's V8 JavaScript engine. While Chrome automatically updates when new security patches are available, users can speed up the process manually using the browser's Help menu",
-                "date" => "2025-09-18",
-                "url" => "https://www.bleepingcomputer.com/news/security/google-patches-sixth-chrome-zero-day-exploited-in-attacks-this-year/",
-            ],
-            [
-                'title' => 'New FileFix Variant Delivers StealC Malware Through Multilingual Phishing Site',
-                'image' => '04edd27cb6f57ba9fc9390de16b1409d.jpg',
-                'content' => "A new campaign that's leveraging a variant of the FileFix social engineering tactic to deliver the StealC information stealer malware was discovered by Acronis researchers. The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection. The final stage deploys a loader that executes the StealC infostealer, targeting browsers, cryptocurrency wallets, messaging apps, and cloud credentials.",
-                "date" => "2025-09-18",
-                "url" => "https://www.acronis.com/en/tru/posts/filefix-in-the-wild-new-filefix-campaign-goes-beyond-poc-and-leverages-steganography/",
-            ],
-        ];
-    }
+function news()
+{
+    return [
+        [
+            'title' => 'Microsoft Seizes 338 Domains in RaccoonO365 Takedown',
+            'image' => 's3.webp',
+            'content' => "Microsoft's Digital Crimes Unit (DCU) has dismantled RaccoonO365, one of the fastest-growing phishing services targeting Microsoft 365 accounts. Acting under a court order from the Southern District of New York, the DCU seized 338 domains tied to the operation, disrupting its infrastructure. Tracked by Microsoft as Storm-2246, RaccoonO365 sold phishing kits that impersonated Microsoft branding, enabling even unskilled actors to steal user credentials on a large scale.",
+            'date' => '2025-09-22',
+            'url' => 'https://blogs.microsoft.com/on-the-issues/2025/09/16/microsoft-seizes-338-websites-to-disrupt-rapidly-growing-raccoono365-phishing-service/',
+        ],
+        [
+            'title' => 'Google Patches Sixth Chrome Zero-Day Exploited in Attacks This Year',
+            'image' => 's2.webp',
+            'content' => "Google has released emergency security updates to patch a Chrome zero-day vulnerability. This is the sixth zero-day tagged as exploited in attacks since the beginning of the year. The zero-day vulnerability is caused by a type confusion weakness in the web browser's V8 JavaScript engine. While Chrome automatically updates when new security patches are available, users can speed up the process manually using the browser's Help menu",
+            'date' => '2025-09-18',
+            'url' => 'https://www.bleepingcomputer.com/news/security/google-patches-sixth-chrome-zero-day-exploited-in-attacks-this-year/',
+        ],
+        [
+            'title' => 'New FileFix Variant Delivers StealC Malware Through Multilingual Phishing Site',
+            'image' => 's6.webp',
+            'content' => "A new campaign that's leveraging a variant of the FileFix social engineering tactic to deliver the StealC information stealer malware was discovered by Acronis researchers. The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection. The final stage deploys a loader that executes the StealC infostealer, targeting browsers, cryptocurrency wallets, messaging apps, and cloud credentials.",
+            'date' => '2025-09-18',
+            'url' => 'https://www.acronis.com/en/tru/posts/filefix-in-the-wild-new-filefix-campaign-goes-beyond-poc-and-leverages-steganography/',
+        ],
+    ];
+}

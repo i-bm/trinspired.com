@@ -23,7 +23,7 @@
 </div>
 
 <!-- Critical Webinar Modal -->
-<div class="modal fade" id="criticalWebinarModal" tabindex="-1" aria-labelledby="criticalWebinarModalLabel"
+{{-- <div class="modal fade" id="criticalWebinarModal" tabindex="-1" aria-labelledby="criticalWebinarModalLabel"
     aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content" style="background: transparent; border: none;">
@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {

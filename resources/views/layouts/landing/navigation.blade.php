@@ -68,9 +68,10 @@
                     </div>
                     <div class="de-flex-col">
                         <div class="menu_side_area">
-                            <a href="{{ route('contact') }}" class="btn-main fx-slide btn-line me-2"><span>Start For
-                                    Free</span></a>
-                            <a href="#" class="btn-main fx-slide"><span>Explore Pricing</span></a>
+                            {{-- <a href="{{ route('contact') }}" class="btn-main fx-slide btn-line me-2"><span>Start
+                                    For
+                                    Free</span></a> --}}
+                            <a href="{{ route('contact') }}" class="btn-main fx-slide"><span>Book a Call</span></a>
                             <span id="menu-btn"></span>
                         </div>
                     </div>
