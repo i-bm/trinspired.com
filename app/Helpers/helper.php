@@ -39,6 +39,10 @@ function nav_services()
             'name' => 'Acronis Security',
             'url' => route('services.acronis'),
         ],
+        [
+            'name' => 'Cybersecurity',
+            'url' => route('services.cybersecurity'),
+        ],
         // [
         //     'name' => 'Trading Solutions',
         //     'url' => route('services.trading'),

@@ -61,4 +61,14 @@ class ServicesController extends Controller
 
         return view('pages.services.acronis', compact('title', 'description'));
     }
+
+    public function cybersecurity()
+    {
+        $description = 'Cybersecurity Services';
+        $title = 'Cybersecurity';
+        $image = 'assets/images/background/2.webp';
+        $subtitle = 'Prevention is cheaper than a breach';
+
+        return view('pages.services.cybersecurity', compact('title', 'description', 'image', 'subtitle'));
+    }
 }
