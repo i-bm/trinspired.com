@@ -117,12 +117,12 @@ function slider()
             'image' => 'slider/1.webp',
             'url' => route('services.secure'),
         ],
-        // [
-        //     'title' => 'Secure Access & Connection Acceleration',
-        //     'description' => 'Local & Remote secure access orchestration that speeds up app connection & isolates endpoint infections',
-        //     'image' => 'assets/images/backgrounds/secure.png',
-        //     'url' => route('services.secure'),
-        // ],
+        [
+            'title' => 'Don’t Let Attackers Exploit Information Overload To Stay Unnoticed',
+            'description' => 'Apply Cybercyte X-CTEM to unify Threat Exposure, GRC and Remediation.',
+            'image' => 'slider/cyber.jpg',
+            'url' => route('services.cybersecurity'),
+        ],
         [
             'title' => 'Acronis Advanced Endpoint Security + EDR & XDR',
             'description' => 'NextGen AI Cybersecurity with multi domain referencing for holistic defense',

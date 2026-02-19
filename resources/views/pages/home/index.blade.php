@@ -73,33 +73,20 @@
 
 <div class="section-dark bg-color text-light d-flex py-4 lh-1 overflow-hidden">
     <div class="de-marquee-list-2 wow fadeIn" data-wow-duration="2s">
-        <span class="fs-32 fw-500">Network Security</span>
+        <span class="fs-32 fw-500">CISSP</span>
         <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Cloud Security</span>
+        <span class="fs-32 fw-500">OCSP</span>
         <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Endpoint Protection</span>
+        <span class="fs-32 fw-500">ISO 27001 Lead Auditor</span>
         <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Cloud Migration</span>
+        <span class="fs-32 fw-500">CSA</span>
         <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Unified Communications</span>
+        <span class="fs-32 fw-500">DPA Certified</span>
         <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Threat Intelligence</span>
+        <span class="fs-32 fw-500">ISO 27001 Lead Implementer</span>
         <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Cloud Infrastructure Setup</span>
-        <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Network Connectivity</span>
-        <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Penetration Testing</span>
-        <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Disaster Recovery</span>
-        <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">24/7 Support</span>
-        <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Security Audits</span>
-        <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Managed Cloud Services</span>
-        <span class="mx-3 fs-32 op-3">/</span>
-        <span class="fs-32 fw-500">Incident Response</span>
+
+
     </div>
 </div>
 
