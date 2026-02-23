@@ -1,0 +1,416 @@
+/**
+ * Centralized styles for service pages (Cloud, Secure Access, Cybersecurity)
+ */
+
+/* ========== Shared Section & Layout ========== */
+.svc-section {
+    padding: 80px 0;
+}
+
+.svc-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #080808;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.svc-section-title + .svc-section-subtitle {
+    margin-top: -2rem;
+}
+
+.svc-section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.svc-bg-light {
+    background-color: #e8ecf0;
+}
+
+/* ========== Shared Card (Use Cases, Capabilities) ========== */
+.svc-card {
+    background: #f0f2f5;
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+.svc-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.svc-card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.svc-card-icon i {
+    font-size: 1.5rem;
+}
+
+.svc-card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.svc-card-text {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ========== Shared Image & Benefits ========== */
+.svc-image-wrap {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.svc-image-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Disaster Recovery highlight cards - gradient blocks */
+.dr-highlight-card {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dr-highlight-card:hover {
+    opacity: 0.95;
+    transform: translateY(-2px);
+}
+
+.dr-highlight-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    line-height: 1.35;
+}
+
+.dr-highlight-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.dr-highlight-card-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.dr-highlight-card-link i {
+    font-size: 0.75rem;
+}
+
+/* CTA banner - horizontal gradient */
+.cta-gradient {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
+}
+
+.svc-benefits-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    height: 100%;
+}
+
+/* ========== Cybersecurity-specific ========== */
+.cyber-section {
+    padding: 80px 0;
+}
+
+.cyber-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #080808;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cyber-bg-light {
+    background-color: #e8ecf0;
+}
+
+.cyber-capability-card {
+    background: #f0f2f5;
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+.cyber-capability-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.cyber-capability-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.cyber-capability-icon i {
+    font-size: 1.5rem;
+}
+
+.cyber-capability-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.cyber-capability-text {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cyber-how-card {
+    padding: 1.5rem 0;
+}
+
+.cyber-how-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.cyber-how-icon i {
+    font-size: 1.75rem;
+}
+
+.cyber-how-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.cyber-how-text {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.cyber-usecase-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.cyber-usecase-card:hover {
+    box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+}
+
+.cyber-usecase-logo {
+    max-height: 48px;
+    max-width: 180px;
+    margin-bottom: 1rem;
+}
+
+.cyber-usecase-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.cyber-usecase-text {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.cyber-ai-section {
+    padding: 80px 0;
+}
+
+.cyber-ai-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin-bottom: 1.5rem;
+}
+
+.cyber-ai-text {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.cyber-ai-feature {
+    margin-bottom: 1rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.cyber-ai-feature li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cyber-ai-feature li::before {
+    content: ">";
+    color: #FF8C00;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.cyber-ai-feature li strong {
+    flex-shrink: 0;
+}
+
+.cyber-ai-image-wrap {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.cyber-ai-image-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cyber-integrations-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.cyber-integration-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    height: 100%;
+    min-height: 100px;
+}
+
+.cyber-integration-logo img {
+    max-height: 48px;
+    max-width: 160px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+.cyber-integration-logo:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.cyber-integration-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #333;
+    text-align: center;
+}
+
+.cyber-ctem-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.cyber-ctem-card {
+    background: #f0f2f5;
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.cyber-ctem-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.cyber-ctem-card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.cyber-ctem-card-text {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.cyber-ctem-card-arrow {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #222;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cyber-ctem-card-arrow:hover {
+    background: #FF8C00;
+    color: #fff;
+}
+
+.cyber-ctem-card-arrow i {
+    font-size: 0.9rem;
+}

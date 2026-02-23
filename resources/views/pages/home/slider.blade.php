@@ -71,7 +71,15 @@
                 ['icon' => 'quality.png', 'title' => 'M&A Expertise', 'text' => 'Technical, financial, and commercial
                 analysis for business development.']
                 ];
-                } else {
+                }
+                // elseif (str_contains(strtolower($slide['title']), 'cybersecurity')) {
+                // $features = [
+                //     ['icon' => '', 'title' => 'Unified Threat Exposure', 'text' => 'Discover security gaps, unknown risks, and shadow IT across your organisation.'],
+                //     ['icon' => 'cyber-security.png', 'title' => 'GRC Management', 'text' => 'Streamline GRC processes and enable continuous risk management aligned to ISO 27001, NIST, CIS, PCI, and DORA.'],
+                //     ['icon' => 'cyber-security.png', 'title' => 'Remediation & Response', 'text' => 'Fix identified vulnerabilities, misconfigurations, and security gaps through integrated lifecycle management.'],
+                // ];
+                // }
+                else {
                 // Default features
                 $features = [
                 ['icon' => 'padlock.png', 'title' => 'Expert Solutions', 'text' => 'Professional services tailored to

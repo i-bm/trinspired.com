@@ -90,6 +90,13 @@ function services()
             'image' => 'assets/images/services/services-3-1.jpg',
             'icon' => 'assets/images/icons-white/settings.png',
         ],
+        [
+            'name' => 'Cybersecurity',
+            'url' => route('services.cybersecurity'),
+            'description' => 'Cybersecurity solutions for businesses of all sizes.',
+            'image' => 'assets/images/services/services-4-1.jpg',
+            'icon' => 'assets/images/icons-white/cyber-security.png',
+        ],
     ];
 }
 
@@ -97,13 +104,13 @@ function slider()
 {
     return [
         [
-            'title' => 'Cloud Computing',
+            'title' => 'High Performance Cloud Computing',
             'description' => 'High performance cloud computing orchestration for higher efficiencies...',
             'image' => 'slider/2.webp',
             'url' => route('services.cloud'),
         ],
         [
-            'title' => 'Disaster Recovery-Business Continuity',
+            'title' => 'High Availability Disaster Recovery',
             'description' => 'Continuity Assurance & Failover in seconds for any application on any device',
             // 'description' => 'Winning strategy across verticals',
             'image' => 'slider/disaster.jpeg',
@@ -118,7 +125,7 @@ function slider()
             'url' => route('services.secure'),
         ],
         [
-            'title' => 'Don’t Let Attackers Exploit Information Overload To Stay Unnoticed',
+            'title' => 'The Complete All-In-One Cybersecurity Tools Center',
             'description' => 'Apply Cybercyte X-CTEM to unify Threat Exposure, GRC and Remediation.',
             'image' => 'slider/cyber.jpg',
             'url' => route('services.cybersecurity'),
@@ -240,21 +247,18 @@ function cloud_use_cases()
     return [
         [
             'name' => 'Migration from local to cloud infrastructure',
-            'image' => 'cloud-1.jpg',
-            'content' => '<p>Local or on-premise production systems are migrated to cloud infrastructure at record speeds and at increased performance and availability Seamless transition you can trust!</p>',
-            'layout' => 'lt-image-right',
+            'icon' => 'fa-cloud-arrow-up',
+            'content' => '<p>Local or on-premise production systems are migrated to cloud infrastructure at record speeds and at increased performance and availability. Seamless transition you can trust!</p>',
         ],
         [
             'name' => 'Cloud deployment',
-            'image' => 'cloud-2.jpg',
-            'content' => '<p>Servers are provisioned in seconds for application deployments and hosting. Only high performance, reliable and secure components are employed in the infrastructure Cloud deployment made easy and cost-effective</p>',
-            'layout' => 'rt-image-left',
+            'icon' => 'fa-server',
+            'content' => '<p>Servers are provisioned in seconds for application deployments and hosting. Only high performance, reliable and secure components are employed in the infrastructure. Cloud deployment made easy and cost-effective.</p>',
         ],
         [
             'name' => 'Multi-Cloud deployment',
-            'image' => 'cloud-3.jpg',
+            'icon' => 'fa-clouds',
             'content' => '<p>Multi-cloud architecture for multi-location data protection, multi-layer business continuity strategies and more. Multi-cloud services for lower recovery time objective.</p>',
-            'layout' => 'lt-image-right',
         ],
     ];
 }

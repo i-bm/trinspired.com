@@ -6,12 +6,12 @@ $(document).ready(function(){
             
             // Variable declaration
             var error = false;
-            var name = $('#name').val();
-            var email = $('#email').val();
-            var phone = $('#phone').val();
-            var message = $('#message').val();
+            var name = $('#name').val() || '';
+            var email = $('#email').val() || '';
+            var phone = ($('#phone').length) ? $('#phone').val() || '' : '';
+            var message = $('#message').val() || '';
             
-            $('#name,#email,#phone,#message').click(function(){
+            $('#name,#email,#message').add($('#phone')).click(function(){
                 $(this).removeClass("error_input");
             });
             
@@ -28,10 +28,10 @@ $(document).ready(function(){
             }else{
                 $('#email').removeClass("error_input");
             }
-            if(phone.length == 0){
+            if($('#phone').length && phone.length == 0){
                 var error = true;
                 $('#phone').addClass("error_input");
-            }else{
+            }else if($('#phone').length){
                 $('#phone').removeClass("error_input");
             }
             if(message.length == 0){

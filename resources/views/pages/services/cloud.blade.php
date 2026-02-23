@@ -1,94 +1,70 @@
 @extends('layouts.landing.main')
 @section('content')
-@include('pages.partials.breadcrumb', ['image' => asset('assets/images/backgrounds/1.avif')])
+@include('pages.partials.breadcrumb', ['image' => asset('assets/images/background/4.webp')])
 
-
-<!--Services Details Start-->
-<section style="padding-top: 50px;">
+<!-- Landing Section -->
+<section class="services-details">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="services-details__left">
+                    <div class="services-details__top-content mb-5">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-12">
+                                <h2 class="services-details__top-title">High Performance Cloud Computing Orchestration for Higher Efficiencies and Peace of Mind</h2>
+                                <p class="services-details__top-text mb-3" style="font-size: 1.15rem; font-weight: 600; color: var(--primary-color);">
+                                    55+ datacenters. Multi-timezone. Compliance-ready. Business continuity assured.
+                                </p>
+                                <p class="services-details__top-text">
+                                    We provide turn-key cloud computing services that assure highest performance and availability, compliance with highest global data protection regulation, business continuity, multi-time zone support and connectivity to over 55 datacenters around the world and on every continent.
+                                </p>
+                                <p class="services-details__top-text">
+                                    We take keen interest in where you have been, where you are and where you are going, to design and implement solutions that deliver the desired outcome, return on investments and peace of mind.
+                                </p>
 
+                                <div class="row g-3 mt-4 mb-4">
+                                    <div class="col-lg-6">
+                                        <div class="dr-highlight-card">
+                                            <p class="dr-highlight-card-title mb-0">Multi-cloud architecture & deployment</p>
+                                            <a href="#" class="dr-highlight-card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
 
-                    {{-- <div class="services-details__img">
-                        <img src="{{ asset('assets/images/services/services-details-img-1.jpg') }}" alt="">
-                    </div> --}}
-                    <div class="services-details__top-content">
-                        <div class="row  d-flex align-items-center">
-                            <div class="col-lg-6 d-flex flex-column">
-                                <h4 class="services-details__top-title">High Performance Cloud Computing Orchestration
-                                    for Higher Efficiencies and Peace of
-                                    Mind.</h4>
-                                {{-- <br /> --}}
-                                <p>We provide turn-key cloud computing services that assures highest performance and
-                                    availability, compliance with highest global data protection regulation, business
-                                    continuity, multi-time zone support and connectivity to over 55 datacenters around
-                                    the world and on every continent.</p>
-
-                                <p>We take keen interest in where you have been, where you
-                                    are and where you are going, to design and implement solutions that deliver the
-                                    desired
-                                    outcome, return on investments and peace of mind</p>
+                                    <div class="col-lg-6">
+                                        <div class="dr-highlight-card">
+                                            <p class="dr-highlight-card-title mb-0">Global data protection compliance</p>
+                                            <a href="#strategy-benefits" class="dr-highlight-card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <img src="{{ asset('assets/images/services/cloud.jpg') }}" alt="Cloud Computing"
-                                    class="img-fluid rounded-3 shadow">
+                        </div>
+                    </div>
+
+                    <!-- Use Cases -->
+                    <h4 class="svc-section-title">Use Cases</h4>
+                    <p class="services-details__top-text text-center mb-4">Our expert team of international engineers have designed and implemented turn-key solutions for international customers across verticals.</p>
+
+                    <div class="row g-4">
+                        @foreach (cloud_use_cases() as $service)
+                        <div class="col-lg-6 col-md-6">
+                            <div class="svc-card">
+                                <div class="svc-card-icon">
+                                    <i class="fa-solid {{ $service['icon'] ?? 'fa-cloud' }}"></i>
+                                </div>
+                                <h4 class="svc-card-title">{{ $service['name'] }}</h4>
+                                <div class="svc-card-text">
+                                    {!! $service['content'] !!}
+                                </div>
                             </div>
                         </div>
-                        {{-- <h2 class="services-details__top-title">High Performance Cloud Computing Orchestration</h2>
-
-
-                        <p class="services-details__top-text"> We provide turn-key cloud computing services that assures
-                            highest performance and availability, compliance with highest global data protection
-                            regulation, business continuity, multi-time zone support and connectivity to over 55
-                            datacenters around the world and on every continent.
-                        </p>
-                        <br />
-                        <p class="services-details__top-text">We take keen interest in where you have been, where you
-                            are and where you are going, to design and implement solutions that deliver the desired
-                            outcome, return on investments and peace of mind</p> --}}
-
+                        @endforeach
                     </div>
-
-                    <div class="row d-flex align-items-center wow fadeIn" style="margin-bottom: 50px;"
-                        data-wow-delay="100ms" data-wow-duration="3500ms">
-
-                        <h4 class="services-details__top-title">Use Cases</h4>
-                        <p class="services-details__top-text">Our expert team of international engineers have
-                            designed and implemented turn-key solutions for international customers across
-                            verticals. Some of the solutions include the following</p>
-
-                    </div>
-
-
-                    @foreach (cloud_use_cases() as $service)
-                    <div class="row d-flex align-items-center wow fadeIn  @if($service['layout'] == 'lt-image-right') flex-row-reverse @endif"
-                        style="margin-bottom: 100px;" data-wow-delay="100ms" data-wow-duration="3500ms">
-                        <div class="col-lg-6 d-flex flex-column  "
-                            style="@if($service['layout'] == 'lt-image-right') padding-left:50px  @else padding-right:50px @endif">
-                            <h4>{{ $service['name'] }}</h4>
-
-                            <p>{!! $service['content'] !!}</p>
-                        </div>
-                        <div class="col-lg-6 p-0">
-                            <a href="{{ asset('assets/images/resources/' . $service['image']) }}"><img
-                                    src=" {{ asset('assets/images/resources/' . $service['image']) }}"
-                                    alt="{{ $service['name'] }}" class="img-fluid rounded-3 shadow"></a>
-
-                        </div>
-                    </div>
-                    @endforeach
-
-
-                </div> <!-- Services Details Left End -->
+                </div>
             </div>
-
-            {{-- @include('pages.partials.services_sidebar') --}}
         </div>
     </div>
 </section>
-<!--Services Details End-->
 
 @include('pages.partials.cta')
 @endsection

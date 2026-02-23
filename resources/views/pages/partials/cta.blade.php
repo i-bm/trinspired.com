@@ -1,4 +1,4 @@
-<section class="section-dark bg-color text-light pt-60 pb-50 relative overflow-hidden">
+<section class="section-dark bg-color cta-gradient text-light pt-60 pb-50 relative overflow-hidden">
     <div class="w-30 abs abs-middle end-0 me-5 op-1">
         <img src="{{ asset('assets/images/logo-white-transparent.png') }}" class="w-100 wow scaleIn" alt="">
     </div>

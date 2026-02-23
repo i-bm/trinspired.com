@@ -1,36 +1,45 @@
 @extends('layouts.landing.main')
 @section('content')
-@include('pages.partials.breadcrumb', ['image' => asset('assets/images/backgrounds/1.avif')])
+@include('pages.partials.breadcrumb', ['image' => asset('assets/images/background/9.webp')])
 
-
-<!--Services Details Start-->
-<section class="services" style="padding-top: 120px;">
+<!-- Landing Section -->
+<section class="services-details">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="services-details__left">
+                    <div class="services-details__top-content">
+                        <h2 class="services-details__top-title">Global Voice, Data & Cloud Connectivity Solutions</h2>
+                        <p class="services-details__top-text mb-3" style="font-size: 1.15rem; font-weight: 600; color: var(--primary-color);">
+                            Network delivery. Equipment export. M&A expertise. Investment opportunities.
+                        </p>
+                        <p class="services-details__top-text">
+                            We specialize in integrated telecommunications networks, equipment sourcing and export, M&A services for operators, and investment analysis for telecom businesses.
+                        </p>
+                    </div>
+
+                    <h4 class="svc-section-title">Services</h4>
+
                     @foreach (telecom_services() as $service)
-                    <div class="row d-flex align-items-center wow fadeIn  @if($service['layout'] == 'lt-image-right') flex-row-reverse @endif"
-                        style="margin-bottom: 100px;" data-wow-delay="100ms" data-wow-duration="3500ms">
-                        <div class="col-lg-6 d-flex flex-column">
-                            <h4>{{ $service['name'] }}</h4>
-                            <p>{{ $service['content'] }}</p>
+                    <div class="row align-items-center g-4 mb-5 @if($service['layout'] == 'lt-image-right') flex-row-reverse @endif">
+                        <div class="col-lg-6">
+                            <div class="svc-card">
+                                <h4 class="svc-card-title">{{ $service['name'] }}</h4>
+                                <p class="svc-card-text">{{ $service['content'] }}</p>
+                            </div>
                         </div>
                         <div class="col-lg-6">
-                            <img src="{{ asset('assets/images/services/' . $service['image']) }}"
-                                alt="{{ $service['name'] }}" class="img-fluid rounded-3">
+                            <div class="svc-image-wrap">
+                                <img src="{{ asset('assets/images/services/' . $service['image']) }}" alt="{{ $service['name'] }}">
+                            </div>
                         </div>
                     </div>
                     @endforeach
-
-                </div> <!-- Services Details Left End -->
+                </div>
             </div>
-
-            {{-- @include('pages.partials.services_sidebar') --}}
         </div>
     </div>
 </section>
-<!--Services Details End-->
 
 @include('pages.partials.cta')
 @endsection

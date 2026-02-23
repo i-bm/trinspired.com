@@ -55,12 +55,14 @@
                     Cybersecurity, Telecommunication, IT, and business solutions backed by over 20 years of global
                     expertise. </p>
                 <ul class="ul-check fw-600 mb-4 wow fadeInUp" data-wow-delay=".3s">
-                    <li>Cybersecurity Solutions</li>
-                    <li>Telecommunication Services</li>
-                    <li>IT Solutions</li>
+                    <li>40+ Projects executed</li>
+                    <li>10+ Industry Verticals</li>
                     <li>24/7 Network Monitoring & Support</li>
-                    <li>Business Consultancy</li>
-                    <li>Trading Solutions</li>
+                    <li>20+ years of experience</li>
+                    <li>Global Partners & Expertise</li>
+                    <li>Multi-time zone support</li>
+                    <li>99.99% service availability </li>
+                    <li>Trustworthy</li>
                 </ul>
 
                 <a class="btn-main fx-slide mb10 mb-3 wow fadeIn" href="{{ route('contact') }}"><span>Get in Touch Now</span></a>

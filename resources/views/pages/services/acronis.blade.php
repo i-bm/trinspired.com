@@ -2,48 +2,48 @@
 @section('content')
 @include('pages.partials.breadcrumb', ['image' => asset('assets/images/backgrounds/1.avif')])
 
-
-<!--Services Details Start-->
-<section class="services" style="padding-top: 50px;">
+<!-- Landing Section -->
+<section class="services-details">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
+                <div class="services-details__left">
+                    <div class="services-details__top-content">
+                        <h2 class="services-details__top-title">ACRONIS Advanced Endpoint Security</h2>
+                        <p class="services-details__top-text mb-3" style="font-size: 1.15rem; font-weight: 600; color: var(--primary-color);">
+                            MSP-class XDR. Detect. Respond. Recover. — True business continuity.
+                        </p>
+                        <p class="services-details__top-text">
+                            MSP-class EDR designed to detect and respond to advanced cyber threats that sneak past other defenses, with guided interpretations for streamlined analysis and unique recovery capabilities for true business continuity.
+                        </p>
+                    </div>
 
-                {{-- <h3 class="services-details__top-title mb-4">MSP-class EDR designed to DETECT and RESPOND to
-                    advanced
-                    cyber
-                    threats and attacks that sneak past
-                    other defenses with guided interpretations for streamlined analysis, and unique recovery
-                    capabilities for true business continuity.</h3> --}}
+                    <h4 class="svc-section-title">Capabilities</h4>
 
-
-                <div class="services-details__left" style="margin-top: 50px;">
                     @foreach (acronis_services() as $service)
-                    <div class="row d-flex align-items-center wow fadeIn  @if($service['layout'] == 'lt-image-right') flex-row-reverse @endif"
-                        style="margin-bottom: 100px;" data-wow-delay="100ms" data-wow-duration="3500ms">
-                        <div class="col-lg-6 d-flex flex-column  "
-                            style="@if($service['layout'] == 'lt-image-right') padding-left:50px  @else padding-right:50px @endif">
-                            <h4>{{ $service['name'] }}</h4>
-
-                            <p>{!! $service['content'] !!}</p>
+                    <div class="row align-items-center g-4 mb-5 @if($service['layout'] == 'lt-image-right') flex-row-reverse @endif">
+                        <div class="col-lg-6">
+                            <div class="svc-card">
+                                <h4 class="svc-card-title">{{ $service['name'] }}</h4>
+                                <div class="svc-card-text">
+                                    {!! $service['content'] !!}
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 p-0">
-                            <a href="{{ asset('assets/images/resources/' . $service['image']) }}"><img
-                                    src=" {{ asset('assets/images/resources/' . $service['image']) }}"
-                                    alt="{{ $service['name'] }}" class="img-fluid rounded-3 shadow"></a>
-
+                        <div class="col-lg-6">
+                            <div class="svc-image-wrap">
+                                <a href="{{ asset('assets/images/resources/' . $service['image']) }}" target="_blank" rel="noopener">
+                                    <img src="{{ asset('assets/images/resources/' . $service['image']) }}" alt="{{ $service['name'] }}">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     @endforeach
-
-                </div> <!-- Services Details Left End -->
+                </div>
             </div>
-
-            {{-- @include('pages.partials.services_sidebar') --}}
         </div>
     </div>
 </section>
-<!--Services Details End-->
 
 @include('pages.partials.cta')
 @endsection

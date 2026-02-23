@@ -101,12 +101,14 @@
 <script src="{{ asset('assets/js/custom-marquee.js') }}"></script>
 <script src="{{ asset('assets/js/swiper.js') }}"></script>
 <script src="{{ asset('assets/js/custom-swiper-1.js') }}"></script>
+<script src="{{ asset('assets/js/validation-contact.js') }}"></script>
 
 @if(config('services.turnstile.site_key'))
 <!-- Cloudflare Turnstile -->
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 @endif
 
+@stack('scripts')
 </body>
 
 </html>
