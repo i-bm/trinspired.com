@@ -1,7 +1,7 @@
 @extends('layouts.landing.main')
 
 @section('content')
-@include('pages.partials.breadcrumb', ['image' => asset('assets/images/backgrounds/page-header-bg-1.jpg')])
+@include('pages.partials.breadcrumb', ['image' => asset('assets/images/background/9.webp')])
 
 <style>
     .company {
@@ -45,7 +45,7 @@
         </div>
 
         <div class="col-lg-6">
-            <img src="{{ asset('assets/images/resources/company.webp') }}" alt="Company" class="img-fluid rounded-3"
+            <img src="{{ asset('assets/images/misc/company.webp') }}" alt="Company" class="img-fluid rounded-3"
                 style="width: 100%; height: auto;">
         </div>
     </div>
@@ -60,7 +60,7 @@
             <!-- Image Column -->
             <div class="col-lg-6">
                 <div class="mission-vision-image">
-                    <img src="{{ asset('assets/images/backgrounds/bg_11.webp') }}" alt="Leadership Team"
+                    <img src="{{ asset('assets/images/misc/bg_11.webp') }}" alt="Leadership Team"
                         class="img-fluid rounded-3" style="width: 100%; height: auto;">
                     {{-- <p class="text-white mt-3 mb-0" style="font-size: 14px; opacity: 0.8;">
                         Trinspired Leadership Team

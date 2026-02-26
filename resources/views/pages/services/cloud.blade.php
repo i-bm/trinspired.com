@@ -26,14 +26,14 @@
                                     <div class="col-lg-6">
                                         <div class="dr-highlight-card">
                                             <p class="dr-highlight-card-title mb-0">Multi-cloud architecture & deployment</p>
-                                            <a href="#" class="dr-highlight-card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="#why-choose-cloud" class="dr-highlight-card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6">
                                         <div class="dr-highlight-card">
                                             <p class="dr-highlight-card-title mb-0">Global data protection compliance</p>
-                                            <a href="#strategy-benefits" class="dr-highlight-card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="#why-choose-cloud" class="dr-highlight-card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -41,25 +41,99 @@
                         </div>
                     </div>
 
-                    <!-- Use Cases -->
-                    <h4 class="svc-section-title">Use Cases</h4>
-                    <p class="services-details__top-text text-center mb-4">Our expert team of international engineers have designed and implemented turn-key solutions for international customers across verticals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                    <div class="row g-4">
-                        @foreach (cloud_use_cases() as $service)
-                        <div class="col-lg-6 col-md-6">
-                            <div class="svc-card">
-                                <div class="svc-card-icon">
-                                    <i class="fa-solid {{ $service['icon'] ?? 'fa-cloud' }}"></i>
-                                </div>
-                                <h4 class="svc-card-title">{{ $service['name'] }}</h4>
-                                <div class="svc-card-text">
-                                    {!! $service['content'] !!}
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach
+<section id="why-choose-cloud" class="svc-section svc-bg-light">
+    <div class="container">
+        <h2 class="svc-section-title">Why Choose Trinspired Cloud</h2>
+        <p class="svc-section-subtitle text-center text-muted mb-4">Enterprise-grade cloud orchestration built for performance, compliance and peace of mind</p>
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h4 class="svc-card-title">Global footprint</h4>
+                    <p class="svc-card-text mb-0">Connectivity to 55+ datacenters across every continent with multi-timezone support, so your workloads run where it matters.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4 class="svc-card-title">Compliance & security</h4>
+                    <p class="svc-card-text mb-0">Designed for the highest global data protection standards so you stay compliant and secure without the overhead.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h4 class="svc-card-title">High availability</h4>
+                    <p class="svc-card-text mb-0">Business continuity and near-zero downtime through redundant architecture and proactive monitoring.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon"><i class="fa-solid fa-calculator"></i></div>
+                    <h4 class="svc-card-title">Predictable costs</h4>
+                    <p class="svc-card-text mb-0">Fixed fees and transparent pricing so you can plan with confidence and reduce infrastructure opex.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Use Cases -->
+<section class="svc-section">
+    <div class="container">
+        <h2 class="svc-section-title">Use Cases</h2>
+        <p class="svc-section-subtitle text-center text-muted mb-4">Our expert team of international engineers have designed and implemented turn-key solutions for customers across government, financial services, insurance and NGOs.</p>
+        <div class="row g-4">
+            @foreach (cloud_use_cases() as $service)
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid {{ $service['icon'] ?? 'fa-cloud' }}"></i>
                     </div>
+                    <h4 class="svc-card-title">{{ $service['name'] }}</h4>
+                    <div class="svc-card-text">
+                        {!! $service['content'] !!}
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+<!-- By the numbers -->
+<section class="svc-section svc-bg-light">
+    <div class="container">
+        <h2 class="svc-section-title">By the Numbers</h2>
+        <div class="row g-4 justify-content-center text-center">
+            <div class="col-6 col-md-3">
+                <div class="svc-stat">
+                    <span class="svc-stat-value">55+</span>
+                    <span class="svc-stat-label">Datacenters worldwide</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="svc-stat">
+                    <span class="svc-stat-value">99.99%</span>
+                    <span class="svc-stat-label">Availability SLA</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="svc-stat">
+                    <span class="svc-stat-value">24/7</span>
+                    <span class="svc-stat-label">Monitoring & support</span>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="svc-stat">
+                    <span class="svc-stat-value">GDPR</span>
+                    <span class="svc-stat-label">Compliance-ready</span>
                 </div>
             </div>
         </div>

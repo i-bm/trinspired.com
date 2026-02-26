@@ -246,19 +246,24 @@ function cloud_use_cases()
 {
     return [
         [
-            'name' => 'Migration from local to cloud infrastructure',
-            'icon' => 'fa-cloud-arrow-up',
-            'content' => '<p>Local or on-premise production systems are migrated to cloud infrastructure at record speeds and at increased performance and availability. Seamless transition you can trust!</p>',
+            'name' => 'Government Institution',
+            'icon' => 'fa-landmark',
+            'content' => '<p>A government ministry with multiple departments partnered with Trinspired to centralize all servers and applications in a private cloud architecture that enhanced performance, security and centralized management of all resources. With fixed fees, high availability and business continuity assurance, the ministry reduced infrastructure opex and increased productivity.</p>',
         ],
         [
-            'name' => 'Cloud deployment',
-            'icon' => 'fa-server',
-            'content' => '<p>Servers are provisioned in seconds for application deployments and hosting. Only high performance, reliable and secure components are employed in the infrastructure. Cloud deployment made easy and cost-effective.</p>',
+            'name' => 'Financial Institution',
+            'icon' => 'fa-building-columns',
+            'content' => '<p>A financial institution with 60+ branches and desktop applications and folders achieved secure access to the banking application and folders from any device on a 99.99% availability infrastructure. With hardened reverse proxy technology, application virtualization and connection acceleration, performance increased drastically. Management testified that since subscribing to Trinspired cloud services, user complaints ceased.</p>',
         ],
         [
-            'name' => 'Multi-Cloud deployment',
-            'icon' => 'fa-clouds',
-            'content' => '<p>Multi-cloud architecture for multi-location data protection, multi-layer business continuity strategies and more. Multi-cloud services for lower recovery time objective.</p>',
+            'name' => 'Insurance Institution',
+            'icon' => 'fa-shield-halved',
+            'content' => '<p>A 40+ years insurance institution put an end to operational inefficiencies after subscribing to Trinspired cloud services. It was supposed to be a 3-month test of the infrastructure but after going live, they decided to maintain it for production. It became a case of high performance, high availability and peace of mind for all stakeholders.</p>',
+        ],
+        [
+            'name' => 'Continental NGO',
+            'icon' => 'fa-globe',
+            'content' => '<p>A continental NGO partnered with Trinspired to host a desktop version of Infor SunSystems Accounting Software for its users who work everywhere. With application virtualization, compression and session acceleration, users have secured access to applications and folders anywhere.</p>',
         ],
     ];
 }
