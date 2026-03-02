@@ -138,7 +138,7 @@ function slider()
         ],
         [
             'title' => 'Telecommunications Services',
-            'description' => 'Versatile professional telecom services delivery across continents.',
+            'description' => 'Versatile professional Telecom Services',
             'image' => 'slider/telecom.jpeg',
             'url' => route('services.telecom'),
         ],
