@@ -1,51 +1,83 @@
-<header class="main-header clearfix">
-    <nav class="main-menu clearfix">
-        <div class="main-menu-wrapper">
-            <div class="main-menu-wrapper__left">
-                <div class="main-menu-wrapper__logo">
-                    <a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo-light.png') }}" width="200"
-                            alt="Trinspired Consult Logo"></a>
-                </div>
-                <div class="main-menu-wrapper__main-menu">
-                    <a href="#" class="mobile-nav__toggler">
-                        <span class="mobile-nav__toggler-bar"></span>
-                        <span class="mobile-nav__toggler-bar"></span>
-                        <span class="mobile-nav__toggler-bar"></span>
-                    </a>
-                    <ul class="main-menu__list">
-                        <li>
-                            <a href="{{ route('home') }}">Home</a>
-                        </li>
-                        <li class="dropdown {{ request()->is('services*') ? 'current' : '' }}">
-                            <a href="#">Services</a>
-                            <ul>
-                                @foreach (nav_services() as $service)
-                                <li class="{{ request()->is($service['url']) ? 'current' : '' }}"><a
-                                        href="{{ $service['url'] }}">{{ $service['name'] }}</a></li>
-                                @endforeach
-                            </ul>
-                        </li>
-                        <li><a href="{{ route('company') }}">Company</a></li>
-                        <li><a href="{{ route('events.webinar') }}">Events</a></li>
-                        <li><a href="{{ route('contact') }}">Contact</a></li>
-                    </ul>
+<!-- header begin -->
+<header class="transparent">
+    <div id="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="d-flex justify-content-between xs-hide">
+                        <div class="d-flex">
+                            <div class="topbar-widget me-3"><a href="#"><i class="icofont-location-pin"></i>{{
+                                    config('misc.global_address') }}</a></div>
+                            <div class="topbar-widget me-3"><a href="tel:{{ config('misc.global_phone') }}"><i
+                                        class="icofont-phone"></i>{{ config('misc.global_phone') }}</a></div>
+                            <div class="topbar-widget me-3"><a href="mailto:{{ config('misc.email') }}"><i
+                                        class="icofont-envelope"></i>{{ config('misc.email') }}</a></div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="social-icons">
+                                <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-menu-wrapper__right">
-                <div class="main-menu-wrapper__search-box">
-                    <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass1"></a>
-                </div>
-                <div class="main-menu-wrapper__phone-contact">
-                    <p>Need help? Talk to an expert</p>
-                    <a href="tel:{{ config('misc.africa_phone') }}">{{ config('misc.africa_phone') }}</a>
-                    <br />
-                    <a href="tel:{{ config('misc.global_phone') }}">{{ config('misc.global_phone') }}</a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="de-flex sm-pt10">
+                    <div class="de-flex-col">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="{{ route('home') }}">
+                                <img class="logo-main" src="{{ asset('assets/images/logo-light.png') }}"
+                                    alt="{{ config('app.name') }}">
+                                <img class="logo-mobile" src="{{ asset('assets/images/logo-light.png') }}"
+                                    alt="{{ config('app.name') }}">
+                            </a>
+                        </div>
+                        <!-- logo end -->
+                    </div>
+                    <div class="de-flex-col header-col-mid">
+                        <!-- mainemenu begin -->
+                        <ul id="mainmenu">
+                            <li><a class="menu-item" href="{{ route('home') }}">Home</a></li>
+                            <li><a class="menu-item" href="#">Services</a>
+                                <ul>
+                                    @foreach (nav_services() as $service)
+                                    <li
+                                        class="{{ request()->is(parse_url($service['url'], PHP_URL_PATH)) ? 'current' : '' }}">
+                                        <a href="{{ $service['url'] }}">{{ $service['name'] }}</a>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li><a class="menu-item" href="{{ route('company') }}">About</a></li>
+                            {{-- <li><a class="menu-item" href="{{ route('events.webinar') }}">Events</a></li> --}}
+                            <li><a class="menu-item" href="{{ route('contact') }}">Contact Us</a></li>
+                        </ul>
+                        <!-- mainmenu end -->
+                    </div>
+                    <div class="de-flex-col">
+                        <div class="menu_side_area">
+                            {{-- <a href="{{ route('contact') }}" class="btn-main fx-slide btn-line me-2"><span>Start
+                                    For
+                                    Free</span></a> --}}
+                            <a href="{{ route('contact') }}" class="btn-main fx-slide"><span>Book a Call</span></a>
+                            <span id="menu-btn"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
 </header>
-
-<div class="stricky-header stricked-menu main-menu">
-    <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
-</div><!-- /.stricky-header -->
+<!-- header end -->

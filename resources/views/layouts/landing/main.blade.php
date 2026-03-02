@@ -1,10 +1,29 @@
 @include('layouts.landing.header')
-@include('layouts.landing.navigation')
-@yield('content')
-@include('layouts.landing.footer')
+
+<div id="wrapper">
+    <div class="float-text show-on-scroll">
+        <span><a href="#">Scroll to top</a></span>
+    </div>
+    <div class="scrollbar-v show-on-scroll"></div>
+
+    <!-- preloader begin -->
+    <div id="de-loader"></div>
+    <!-- preloader end -->
+
+    @include('layouts.landing.navigation')
+
+    <!-- content begin -->
+    <div class="no-bottom no-top" id="content">
+        <div id="top"></div>
+        @yield('content')
+    </div>
+    <!-- content end -->
+
+    @include('layouts.landing.footer')
+</div>
 
 <!-- Critical Webinar Modal -->
-<div class="modal fade" id="criticalWebinarModal" tabindex="-1" aria-labelledby="criticalWebinarModalLabel"
+{{-- <div class="modal fade" id="criticalWebinarModal" tabindex="-1" aria-labelledby="criticalWebinarModalLabel"
     aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content" style="background: transparent; border: none;">
@@ -20,7 +39,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {

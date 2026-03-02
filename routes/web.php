@@ -17,6 +17,7 @@ Route::get('/services/telecom-services', [ServicesController::class, 'telecom'])
 Route::get('/services/business-consultancy', [ServicesController::class, 'consultancy'])->name('services.consultancy');
 Route::get('/services/trading-solutions', [ServicesController::class, 'trading'])->name('services.trading');
 Route::get('/services/acronis-security', [ServicesController::class, 'acronis'])->name('services.acronis');
+Route::get('/services/cybersecurity', [ServicesController::class, 'cybersecurity'])->name('services.cybersecurity');
 Route::get('/company', [CompanyController::class, 'index'])->name('company');
 
 Route::get('/events/webinar', [EventController::class, 'webinar'])->name('events.webinar');

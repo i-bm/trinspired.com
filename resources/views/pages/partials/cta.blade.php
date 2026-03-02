@@ -1,21 +1,15 @@
-<!--CTA One Start-->
-<section class="cta-one">
-    <div class="cta-one-bg-overlay"></div>
-    <div class="cta-one-bg" style="background-image: url({{ asset('assets/images/backgrounds/cta-one-bg.png') }})">
+<section class="section-dark bg-color cta-gradient text-light pt-60 pb-50 relative overflow-hidden">
+    <div class="w-30 abs abs-middle end-0 me-5 op-1">
+        <img src="{{ asset('assets/images/logo-white-transparent.png') }}" class="w-100 wow scaleIn" alt="">
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="cta-one__inner">
-                    <div class="cta-one__left">
-                        <h2 class="cta-one__title">We’re delivering the best <br> customer experience</h2>
-                    </div>
-                    <div class="cta-one__right">
-                        <a href="{{ route('contact') }}" class="thm-btn cta-one__btn">Let’s get started</a>
-                    </div>
-                </div>
+        <div class="row g-4">
+            <div class="col-md-10">
+                <h3 class="mb-0 fs-32 wow fadeInRight">Need 24/7 Protection From Threats?</h3>
+            </div>
+            <div class="col-md-2">
+                <a class="btn-main fx-slide btn-line wow fadeInLeft" href="{{ route('contact') }}"><span>Start Free Consultation</span></a>
             </div>
         </div>
     </div>
 </section>
-<!--CTA One End-->

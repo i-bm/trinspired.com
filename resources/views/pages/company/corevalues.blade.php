@@ -47,7 +47,7 @@
                                         We keep our promises.</p> --}}
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="{{ asset('assets/images/resources/cases-page-img-4.jpg') }}"
+                                    <img src="{{ asset('assets/images/misc/cases-page-img-4.jpg') }}"
                                         class="core-values-section__item-img" alt="Integrity">
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                                 </div>
 
                                 <div class="col-lg-6">
-                                    <img src="{{ asset('assets/images/resources/cases-1-img-2.jpg') }}"
+                                    <img src="{{ asset('assets/images/misc/cases-1-img-2.jpg') }}"
                                         class="core-values-section__item-img" alt="Hardwork">
                                 </div>
 
@@ -71,7 +71,7 @@
                         <div class="col-lg-6 ps-lg-5" style="margin-top: 100px;">
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
-                                    <img src="{{ asset('assets/images/resources/cases-1-img-3.jpg') }}"
+                                    <img src="{{ asset('assets/images/misc/cases-1-img-3.jpg') }}"
                                         class="core-values-section__item-img" alt="Creativity & Innovation">
                                 </div>
 
@@ -85,7 +85,7 @@
 
                             <div class="row align-items-center" style="margin-top: 100px;">
                                 <div class="col-lg-6">
-                                    <img src="{{ asset('assets/images/resources/charity.jpg') }}"
+                                    <img src="{{ asset('assets/images/misc/charity.jpg') }}"
                                         class="core-values-section__item-img" alt="Charity">
                                 </div>
 

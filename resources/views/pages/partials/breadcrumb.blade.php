@@ -1,23 +1,23 @@
-<!--Page Header Start-->
-<section class="page-header" style="height: 50vh;">
-    <div class="page-header__bg-overlay"></div>
-    <div class="page-header__bg"
-        style="background-image: url({{  $image ?? asset('assets/images/backgrounds/page-header-bg.jpg') }});">
-    </div>
-    <!-- /.page-header__bg -->
-    <div class="page-header-shape-1"></div><!-- /.page-header-shape-1 -->
-    <div class="page-header-shape-2"></div><!-- /.page-header-shape-2 -->
-    <div class="page-header-shape-3"></div><!-- /.page-header-shape-3 -->
 
-    <div class="container">
-        <div class="page-header__inner">
-            <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><span>/</span></li>
-                <li>{{ $title }}</li>
-            </ul>
-            <h2>{{ $title }}</h2>
+<section id="subheader" class="section-dark bg-dark text-light relative jarallax">
+    <div class="gradient-edge-top"></div>
+    <img src="{{ $image ?? asset('assets/images/background/2.webp') }}" class="jarallax-img" alt="">
+    <div class="container relative z-2">
+        <div class="row gy-4 gx-5 align-items-center">
+            <div class="spacer-double sm-hide"></div>
+
+            <div class="col-lg-6">
+                <h1 class="mb-0 wow fadeInUp" data-wow-delay=".2s">{{ $title }}</h1>
+                <ul class="crumb wow fadeInUp">
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li class="active">{{ $title }}</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 text-lg-end sm-hide">
+                <h3>{{ ucwords(strtolower($subtitle ?? '')) }}</h3>
+            </div>
         </div>
     </div>
+
 </section>
-<!--Page Header End-->

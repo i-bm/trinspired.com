@@ -1,8 +1,6 @@
 @extends('layouts.landing.main')
 @section('content')
-@include('pages.partials.breadcrumb', ['image' => asset('assets/images/backgrounds/1.avif')])
-
-
+@include('pages.partials.breadcrumb', ['image' => asset($image ?? 'assets/images/background/9.webp')])
 
 <!--Services Details Start-->
 <section class="services-details">
@@ -10,123 +8,197 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="services-details__left">
-                    {{-- <div class="services-details__img">
-                        <img src="{{ asset('assets/images/services/services-details-img-1.jpg') }}" alt="">
-                    </div> --}}
                     <div class="services-details__top-content">
-                        <h2 class="services-details__top-title">Business Consultancy & Trading Services </h2>
+                        <h2 class="services-details__top-title">Business Consultancy & Trading Services</h2>
 
-
-                        <p class="services-details__top-text"> We provide business consultancy as well as general
-                            trading services for our continental and global partners. With a portfolio of experts from
-                            multiple countries with over 35 years of experience in mergers and acquisitions, software
-                            development and deployment, project management, business development and training.
+                        <p class="services-details__top-text">
+                            35+ years of expertise in mergers and acquisitions, software development and deployment, project management, business development and training. We provide business consultancy as well as general trading services for our continental and global partners.
                         </p>
                         <br />
-
-                        {{-- <div class="row d-flex align-items-center wow fadeIn" style="margin-bottom: 100px;"
-                            data-wow-delay="100ms" data-wow-duration="3500ms">
-                            <div class="col-lg-6 d-flex flex-column">
-                                <h4> Highly experienced domains: </h4>
-
-                                <p>Mergers & Acquisitions in telecoms</p>
-                                <p>Project Management</p>
-                                <p>Software Development & Deployment</p>
-                                <p>Business Consulting</p>
-                            </div>
-                            <div class="col-lg-6 p-0">
-                                <a href="{{ asset('assets/images/resources/business-man.jpg') }}"><img
-                                        src=" {{ asset('assets/images/resources/business-man.jpg') }}" alt="Consultancy"
-                                        class="img-fluid rounded-3 shadow"></a>
-
-                            </div>
-                        </div> --}}
-
-                        <h4 class="services-details__top-text"> Highly experienced domains: </h4>
-                        <ul class="services-details__top-list">
-                            <li>Mergers & Acquisitions in telecoms</li>
-                            <li>Project Management</li>
-                            <li>Software Development & Deployment</li>
-                            <li>Business Consulting</li>
-                        </ul>
-
-                        <br />
-                        <h4 class="services-details__top-text"> Projects executed: </h4>
-                        <ul class="services-details__top-list">
-                            <li>Mergers & Acquisitions service for a European telecom company for the acquisition of 70%
-                                stake in an African Telecom company</li>
-                            <li>Collaboration with a foreign group to implement a national health insurance and
-                                presidential election system for an African country</li>
-                            <li>Hosting and business continuity services deployment for the Financial, Manufacturing,
-                                Educational, Governmental and Insurance institutions in Africa</li>
-                            <li>Import and sale of technologies to multiple industries</li>
-                        </ul>
-
+                        <p class="services-details__top-text">
+                            Our portfolio of experts from multiple countries delivers end-to-end support—from M&A in telecoms and project management to software development and business consulting—with a focus on global delivery and lasting results.
+                        </p>
                     </div>
 
-
-                    <h4 class="services-details__top-title d-none">Use Cases</h4>
-                    <p class="services-details__top-text d-none">Our expert team of international engineers have
-                        designed and implemented turn-key solutions for international customers across
-                        verticals. Some of the solutions include the following:</p>
-                    <div class="services-details__bottom-box d-none">
-
-                        <div class="services-details__bottom-box-single">
-                            <div class="services-details__bottom-box-icon">
-                                <span class="icon-report"></span>
-                            </div>
-                            <div class="services-details__bottom-box-content">
-                                <h4 class="services-details__bottom-box-title">Migration from local to cloud
-                                    infrastructure</h4>
-                                <p class="services-details__bottom-box-text">
-                                    Local or on-premise production systems are migrated to cloud infrastructure at
-                                    record speeds and at increased performance and availability.
-                                    Seamless transition you can trust!
+                    <h4 class="cyber-ctem-title">Why Business Consultancy?</h4>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="cyber-ctem-card">
+                                <h4 class="cyber-ctem-card-title">35+ Years Experience</h4>
+                                <p class="cyber-ctem-card-text">
+                                    Deep expertise across <strong>M&A</strong>, software, project management and business development.
                                 </p>
+                                <a href="#expertise" class="cyber-ctem-card-arrow" aria-label="Learn more"><i class="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
-
-
-                        <div class="services-details__bottom-box-single">
-                            <div class="services-details__bottom-box-icon">
-                                <span class="icon-report"></span>
-                            </div>
-                            <div class="services-details__bottom-box-content">
-                                <h4 class="services-details__bottom-box-title">Cloud deployment</h4>
-                                <p class="services-details__bottom-box-text">
-
-                                    Servers are provisioned in seconds for application deployments and hosting. Only
-                                    high performance, reliable and secure components are employed in the
-                                    infrastructure
-                                    Cloud deployment made easy and cost-effective
-
+                        <div class="col-md-4">
+                            <div class="cyber-ctem-card">
+                                <h4 class="cyber-ctem-card-title">M&A & Project Management</h4>
+                                <p class="cyber-ctem-card-text">
+                                    Proven track record in <strong>telecoms M&A</strong> and large-scale project delivery.
                                 </p>
+                                <a href="#expertise" class="cyber-ctem-card-arrow" aria-label="Learn more"><i class="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
-
-                        <div class="services-details__bottom-box-single">
-                            <div class="services-details__bottom-box-icon">
-                                <span class="icon-report"></span>
-                            </div>
-                            <div class="services-details__bottom-box-content">
-                                <h4 class="services-details__bottom-box-title">Multi-Cloud deployment</h4>
-                                <p class="services-details__bottom-box-text">
-                                    Multi-cloud architecture for multi-location data protection, multi-layer business
-                                    continuity strategies and more.
-                                    Multi-cloud services for lower recovery time objective
-
+                        <div class="col-md-4">
+                            <div class="cyber-ctem-card">
+                                <h4 class="cyber-ctem-card-title">Global Delivery</h4>
+                                <p class="cyber-ctem-card-text">
+                                    Continental and <strong>global partners</strong> supported by a multi-country expert team.
                                 </p>
+                                <a href="#projects" class="cyber-ctem-card-arrow" aria-label="Learn more"><i class="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
-                </div> <!-- Services Details Left End -->
+                </div>
             </div>
-
-            {{-- @include('pages.partials.services_sidebar') --}}
         </div>
     </div>
 </section>
+
+<!-- Our Expertise -->
+<section id="expertise" class="cyber-section cyber-bg-light">
+    <div class="container">
+        <h2 class="cyber-section-title">Our Expertise</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="cyber-capability-card">
+                    <div class="cyber-capability-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="cyber-capability-title">M&A in Telecoms</h4>
+                    <p class="cyber-capability-text">Mergers and acquisitions advisory and execution for telecoms and related sectors.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="cyber-capability-card">
+                    <div class="cyber-capability-icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h4 class="cyber-capability-title">Project Management</h4>
+                    <p class="cyber-capability-text">End-to-end project management for complex, multi-stakeholder programmes.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="cyber-capability-card">
+                    <div class="cyber-capability-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4 class="cyber-capability-title">Software Development & Deployment</h4>
+                    <p class="cyber-capability-text">Development, deployment and integration of software solutions at scale.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="cyber-capability-card">
+                    <div class="cyber-capability-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h4 class="cyber-capability-title">Business Consulting</h4>
+                    <p class="cyber-capability-text">Strategic business development, training and advisory for growth and transformation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How We Work -->
+<section class="cyber-section">
+    <div class="container">
+        <h2 class="cyber-section-title">How We Work</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="cyber-how-card">
+                    <div class="cyber-how-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h4 class="cyber-how-title">Advisory & Strategy</h4>
+                    <p class="cyber-how-text">We define strategy, assess opportunities and guide decisions from M&A to digital transformation.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="cyber-how-card">
+                    <div class="cyber-how-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h4 class="cyber-how-title">Implementation</h4>
+                    <p class="cyber-how-text">From software deployment to programme delivery, we execute with clear governance and milestones.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="cyber-how-card">
+                    <div class="cyber-how-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h4 class="cyber-how-title">Training & Development</h4>
+                    <p class="cyber-how-text">We build capability through targeted training and knowledge transfer for your teams.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="cyber-how-card">
+                    <div class="cyber-how-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h4 class="cyber-how-title">Global Delivery</h4>
+                    <p class="cyber-how-text">Our multi-country experts support continental and global partners with local insight and scale.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Executed -->
+<section id="projects" class="cyber-section cyber-bg-light">
+    <div class="container">
+        <h2 class="cyber-section-title">Projects Executed</h2>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="cyber-usecase-card">
+                    <h4 class="cyber-usecase-title">European Telecom M&A</h4>
+                    <p class="cyber-usecase-text">Mergers & Acquisitions service for a European telecom company for the acquisition of 70% stake in an African telecom company.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="cyber-usecase-card">
+                    <h4 class="cyber-usecase-title">National Systems Implementation</h4>
+                    <p class="cyber-usecase-text">Collaboration with a foreign group to implement a national health insurance and presidential election system for an African country.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="cyber-usecase-card">
+                    <h4 class="cyber-usecase-title">Hosting & Business Continuity</h4>
+                    <p class="cyber-usecase-text">Hosting and business continuity services deployment for Financial, Manufacturing, Educational, Governmental and Insurance institutions in Africa.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="cyber-usecase-card">
+                    <h4 class="cyber-usecase-title">Technology Import & Distribution</h4>
+                    <p class="cyber-usecase-text">Import and sale of technologies to multiple industries across our markets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Partner With Us -->
+<section class="cyber-ai-section">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-12">
+                <h2 class="cyber-ai-title">Why Partner With Us</h2>
+                <p class="cyber-ai-text">
+                    We combine deep sector experience with a practical, delivery-focused approach. Whether you need M&A support, programme delivery, software deployment or business development, our experts work as an extension of your team to achieve clear, measurable outcomes.
+                </p>
+                <ul class="cyber-ai-feature list-unstyled">
+                    <li><strong>Portfolio of experts:</strong> Multi-country team with 35+ years of combined experience.</li>
+                    <li><strong>End-to-end support:</strong> From strategy and advisory through to implementation and training.</li>
+                    <li><strong>Proven delivery:</strong> Track record across telecoms M&A, national systems and enterprise solutions.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--Services Details End-->
 
-@include('pages.partials.cta')
+@include('pages.partials.book')
 @endsection
