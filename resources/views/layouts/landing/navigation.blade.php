@@ -61,7 +61,7 @@
                                 </ul>
                             </li>
                             <li><a class="menu-item" href="{{ route('company') }}">About</a></li>
-                            <li><a class="menu-item" href="{{ route('events.webinar') }}">Events</a></li>
+                            {{-- <li><a class="menu-item" href="{{ route('events.webinar') }}">Events</a></li> --}}
                             <li><a class="menu-item" href="{{ route('contact') }}">Contact Us</a></li>
                         </ul>
                         <!-- mainmenu end -->

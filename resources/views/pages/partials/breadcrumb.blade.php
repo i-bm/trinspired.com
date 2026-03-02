@@ -15,7 +15,7 @@
             </div>
 
             <div class="col-lg-6 text-lg-end sm-hide">
-                <h3>{{ $subtitle ?? '' }}</h3>
+                <h3>{{ ucwords(strtolower($subtitle ?? '')) }}</h3>
             </div>
         </div>
     </div>

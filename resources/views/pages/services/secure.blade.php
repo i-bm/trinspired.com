@@ -80,80 +80,78 @@
 <section class="svc-section svc-bg-light">
     <div class="container">
         <h2 class="svc-section-title">Service Benefits</h2>
-        <div class="row g-4 align-items-center">
-            <div class="col-lg-5">
-                <div class="svc-image-wrap">
-                    <img src="{{ asset('assets/images/resources/about-8.jpg') }}" alt="Secure Access">
+        <p class="svc-section-subtitle text-center text-muted mb-4">What you gain from secure access and connection acceleration</p>
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h4 class="svc-card-title">Encrypted Connections</h4>
+                    <p class="svc-card-text mb-0">Secure connections on LAN and remotely. Connections between LAN devices are encrypted.</p>
                 </div>
             </div>
-            <div class="col-lg-7">
-                <div class="svc-benefits-card">
-                    <ul class="list-unstyled services-details__planning-list mb-0">
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <p>Secure connections on LAN and remotely. Connections between LAN devices are encrypted.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <p>Compute with any device anywhere without any installations</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <p>Remote device doesn't become part of local network</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <p>Rapid deployment of service and simplified troubleshooting</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <p>Increase in efficiency and productivity</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <p>Reduction in IT production cost</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <p>Increase access security with MFA integration</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <p>BYOD Enabler</p>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <h4 class="svc-card-title">Any Device, Anywhere</h4>
+                    <p class="svc-card-text mb-0">Compute with any device anywhere without any installations.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="svc-card-title">Network Isolation</h4>
+                    <p class="svc-card-text mb-0">Remote device doesn't become part of local network.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h4 class="svc-card-title">Rapid Deployment</h4>
+                    <p class="svc-card-text mb-0">Rapid deployment of service and simplified troubleshooting.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="svc-card-title">Efficiency & Productivity</h4>
+                    <p class="svc-card-text mb-0">Increase in efficiency and productivity.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h4 class="svc-card-title">Cost Reduction</h4>
+                    <p class="svc-card-text mb-0">Reduction in IT production cost.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h4 class="svc-card-title">MFA Security</h4>
+                    <p class="svc-card-text mb-0">Increase access security with MFA integration.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h4 class="svc-card-title">BYOD Enabler</h4>
+                    <p class="svc-card-text mb-0">Bring your own device—access from any endpoint securely.</p>
                 </div>
             </div>
         </div>
@@ -161,69 +159,59 @@
 </section>
 
 <!-- Service Niche -->
-<section class="svc-section">
+<section class="svc-section bg-white">
     <div class="container">
         <h2 class="svc-section-title">Service Niche</h2>
-        <div class="row g-4 align-items-center">
-            <div class="col-lg-7 order-lg-2">
-                <div class="svc-image-wrap">
-                    <img src="{{ asset('assets/images/resources/feature-5.jpg') }}" alt="Service Niche">
+        <p class="svc-section-subtitle text-center text-muted mb-4">What sets our secure access approach apart</p>
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h4 class="svc-card-title">Implementation</h4>
+                    <p class="svc-card-text mb-0">Simplified implementation without the need for endpoint installations.</p>
                 </div>
             </div>
-            <div class="col-lg-5 order-lg-1">
-                <div class="svc-benefits-card">
-                    <ul class="list-unstyled services-details__planning-list mb-0">
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <h5>Implementation</h5>
-                                <p>Simplified implementation without the need for endpoint installations</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <h5>Security</h5>
-                                <p>MFA integration and endpoint does not become part of local network</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <h5>Device Computing</h5>
-                                <p>Any device computing</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <h5>Cost</h5>
-                                <p>Reduces operational cost in terms of connectivity & resource maximization</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-tick"></span>
-                            </div>
-                            <div class="text">
-                                <h5>Users</h5>
-                                <p>Used by top government security organisations in the East & West</p>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="svc-card-title">Security</h4>
+                    <p class="svc-card-text mb-0">MFA integration and endpoint does not become part of local network.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <h4 class="svc-card-title">Device Computing</h4>
+                    <p class="svc-card-text mb-0">Any device computing.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="svc-card-title">Cost</h4>
+                    <p class="svc-card-text mb-0">Reduces operational cost in terms of connectivity & resource maximization.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="svc-card">
+                    <div class="svc-card-icon">
+                        <i class="fa-solid fa-building-shield"></i>
+                    </div>
+                    <h4 class="svc-card-title">Users</h4>
+                    <p class="svc-card-text mb-0">Used by top government security organisations in the East & West.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-@include('pages.partials.cta')
+@include('pages.partials.book')
 @endsection

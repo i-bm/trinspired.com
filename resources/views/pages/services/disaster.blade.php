@@ -160,5 +160,5 @@
     </div>
 </section>
 
-@include('pages.partials.cta')
+@include('pages.partials.book')
 @endsection
