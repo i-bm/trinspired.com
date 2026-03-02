@@ -134,46 +134,28 @@
 </section>
 
 <!-- Use Cases -->
-<section id="use-cases" class="cyber-section">
+<section id="use-cases" class="cyber-section cyber-bg-light1">
     <div class="container">
         <h2 class="cyber-section-title">Use Cases</h2>
         <p class="text-center text-muted mb-4">Our expert team of international engineers have designed and implemented turn-key solutions for customers across verticals.</p>
 
-        <h4 class="cyber-ctem-title mb-3">Cloud Computing</h4>
         <div class="row g-4">
-            <div class="col-lg-12">
+            @foreach (cloud_use_cases() as $case)
+            <div class="col-lg-6">
                 <div class="cyber-usecase-card">
-                    <h4 class="cyber-usecase-title">1. Government Institution</h4>
-                    <p class="cyber-usecase-text mb-0">A government ministry with multiple departments partnered with Trinspired to centralize all servers and applications in a private cloud architecture that enhanced performance, security and centralized management of all resources. With fixed fees, high availability and business continuity assurance, the ministry reduced infrastructure opex and increased productivity.</p>
+                    <div class="cyber-usecase-icon-wrap rounded-circle d-flex align-items-center justify-content-center mb-3">
+                        <i class="fa-solid {{ $case['icon'] }}"></i>
+                    </div>
+                    <h4 class="cyber-usecase-title">{{ $case['name'] }}</h4>
+                    <p class="cyber-usecase-text mb-0">{!! strip_tags($case['content']) !!}</p>
                 </div>
             </div>
-            <div class="col-lg-12">
-                <div class="cyber-usecase-card">
-                    <h4 class="cyber-usecase-title">2. Financial Institution</h4>
-                    <p class="cyber-usecase-text mb-0">A financial institution with 60+ branches and desktop application and folders achieved secure access from any device to the banking application and folders in a 99.99% availability infrastructure. With the integration of a hardened reverse proxy technology, application virtualization and connection acceleration algorithm, performance increased drastically. Management testified that since subscribing to Trinspired cloud services, user complaints ceased.</p>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="cyber-usecase-card">
-                    <h4 class="cyber-usecase-title">3. Insurance Institution</h4>
-                    <p class="cyber-usecase-text mb-0">A 40+ years insurance institution put an end to operational inefficiencies after subscribing to Trinspired cloud services. It was supposed to be a 3 months test of the infrastructure but after going live, decided to maintain it for production. It became a case of high performance, high availability and peace of mind for all stakeholders.</p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
 
-<!-- Repositories -->
-<section class="cyber-section cyber-bg-light">
-    <div class="container">
-        <h2 class="cyber-integrations-title">Repositories</h2>
-        <div class="row g-4 align-items-center justify-content-center">
-            <div class="col-12 text-center">
-                <p class="mb-0 fs-5">Acronis Cyber Cloud | Microsoft Azure | Google Cloud</p>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Integrations -->
 <section class="cyber-section cyber-bg-light">
     <div class="container">
         <h2 class="cyber-integrations-title">Integrations</h2>

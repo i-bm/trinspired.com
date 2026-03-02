@@ -272,6 +272,28 @@ function news()
 {
     return [
         [
+            'title' => 'Google patches first Chrome zero-day exploited in attacks this year',
+            'image' => 's1.webp',
+            'content' => "Google has released an emergency security update to patch a zero-day vulnerability in Chrome. This is the first zero-day exploited in attacks this year. The vulnerability is caused by a type confusion weakness in the web browser's V8 JavaScript engine. While Chrome automatically updates when new security patches are available, users can speed up the process manually using the browser's Help menu.",
+            'date' => '2026-02-16',
+            'url' => 'https://www.bleepingcomputer.com/news/security/google-patches-first-chrome-zero-day-exploited-in-attacks-this-year/',
+        ],
+        [
+            'title' => 'Critical SolarWinds Serv-U Flaws Offer Root Access to Servers',
+            'image' => 's2.webp',
+            'content' => "The SolarWinds Serv-U file transfer server software has been found to contain a critical vulnerability that allows attackers to gain root access to servers. The vulnerability is caused by a type confusion weakness in the web server's V8 JavaScript engine. While Chrome automatically updates when new security patches are available, users can speed up the process manually using the browser's Help menu.",
+            'date' => '2026-02-24',
+            'url' => 'https://www.bleepingcomputer.com/news/security/critical-solarwinds-serv-u-flaws-offer-root-access-to-servers/',
+        ],
+        [
+            'title' => 'Lazarus Group Uses Medusa Ransomware in New Attacks',
+            'image' => 's3.webp',
+            'content' => 'The Lazarus Group has been linked to the use of Medusa ransomware in new attacks. The ransomware is a new variant of the Medusa ransomware that is being used to target servers and desktops. The ransomware is a new variant of the Medusa ransomware that is being used to target servers and desktops.',
+            'date' => '2026-02-24',
+            'url' => 'https://www.bleepingcomputer.com/news/security/north-korean-lazarus-group-linked-to-medusa-ransomware-attacks/',
+        ],
+
+        [
             'title' => 'Microsoft Seizes 338 Domains in RaccoonO365 Takedown',
             'image' => 's3.webp',
             'content' => "Microsoft's Digital Crimes Unit (DCU) has dismantled RaccoonO365, one of the fastest-growing phishing services targeting Microsoft 365 accounts. Acting under a court order from the Southern District of New York, the DCU seized 338 domains tied to the operation, disrupting its infrastructure. Tracked by Microsoft as Storm-2246, RaccoonO365 sold phishing kits that impersonated Microsoft branding, enabling even unskilled actors to steal user credentials on a large scale.",

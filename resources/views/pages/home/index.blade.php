@@ -27,8 +27,7 @@
             <div class="col-lg-12">
                 <div class="text-center">
                     {{-- <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Your Trusted Partner</div> --}}
-                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Your Trusted Partner for Cybersecurity,
-                        Telecommunication, IT, and Business Solutions</h2>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Your Trusted Partner for Cybersecurity, Cloud Computing, Disaster Recovery, and IT Business Solutions</h2>
                 </div>
             </div>
 
