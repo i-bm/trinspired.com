@@ -125,7 +125,7 @@ function slider()
             'url' => route('services.secure'),
         ],
         [
-            'title' => 'The Complete All-In-One Cybersecurity Tools Center',
+            'title' => 'The New SOC Threat Exposure GRC & Remediation All-in-One',
             'description' => 'Apply Cybercyte X-CTEM to unify Threat Exposure, GRC and Remediation.',
             'image' => 'slider/cyber.jpg',
             'url' => route('services.cybersecurity'),
