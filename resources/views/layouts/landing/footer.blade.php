@@ -9,13 +9,14 @@
                 <p>{{ company()['description'] }}</p>
 
                 <div class="social-icons mb-sm-30">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="{{ config('misc.social_links.linkedin') }}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="{{ config('misc.social_links.x') }}" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="{{ config('misc.social_links.instagram') }}" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="{{ config('misc.social_links.facebook') }}" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="{{ config('misc.social_links.tiktok') }}" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
+
 
             <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
                 <div class="row">

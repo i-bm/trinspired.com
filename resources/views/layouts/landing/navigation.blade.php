@@ -16,11 +16,11 @@
 
                         <div class="d-flex">
                             <div class="social-icons">
-                                <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                                <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
-                                <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
-                                <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                <a href="{{ config('misc.social_links.facebook') }}" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                <a href="{{ config('misc.social_links.x') }}" target="_blank"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                <a href="{{ config('misc.social_links.instagram') }}" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                <a href="{{ config('misc.social_links.tiktok') }}" target="_blank"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+                                <a href="{{ config('misc.social_links.linkedin') }}" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
                             </div>
                         </div>
                     </div>
